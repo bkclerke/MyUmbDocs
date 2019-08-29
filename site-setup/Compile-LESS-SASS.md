@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Compilining LESS and SASS
+title: Compiling LESS and SASS
 ---
 
 # Compiling LESS and SASS

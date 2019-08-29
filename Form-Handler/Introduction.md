@@ -2,6 +2,11 @@
 versionFrom: 8
 meta.Title: "DT Form Handler"
 meta.Description: "DT Form Handler Package Instructions"
+
+layout: default
+title: Form Handler
+nav_order: 1
+permalink: /Form-Handler
 ---
 
 # DT Form Handler

@@ -1,3 +1,9 @@
+---
+layout: default
+title: Site Setup Checklist
+permalink: /site-setup
+---
+
 # Site Setup Checklist
 
 Once your Umbraco site is installed these are some general settings to configure on your site. Please note that this checklist assumes that you know your way around the Umbraco backoffice to perform basic configuration tasks such as modifing document types and user groups. Most updates here consist of file changes in the file system.

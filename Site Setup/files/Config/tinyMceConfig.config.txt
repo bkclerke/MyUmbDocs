@@ -1,0 +1,29 @@
+<config key="style_formats">
+    [
+        {"title":"Headers","items":[
+            {"title":"Header 1 (H1)","block":"h1"},
+            {"title":"Header 2 (H2)","block":"h2"},
+            {"title":"Header 3 (H3)","block":"h3"},
+            {"title":"Header 4 (H4)","block":"h4"},
+            {"title":"Header 5 (H5)","block":"h5"},
+            {"title":"Header 6 (H6)","block":"h6"}
+        ]},
+        {"title":"Table","items":[
+            {"title": "Table", "selector":"table", "classes":"table"},
+            {"title": "Small Table", "selector":"table", "classes":"table-sm"},
+            {"title": "Responsive Table", "block":"div", "classes":"table-responsive"},
+            {"title": "Hoverable Rows", "selector":"table", "classes":"table-hover"},
+            {"title": "Striped Rows", "selector":"table", "classes":"table-striped"}
+        ]},
+        {"title":"Embed","items":[
+            {"title": "Responsive Embed", "selector":"iframe,embed", "classes":"embed-responsive"},
+            {"title": "Responsive 21x9", "selector":"iframe,embed", "classes":"embed-responsive embed-responsive-21by9"},
+            {"title": "Responsive 16x9", "selector":"iframe,embed", "classes":"embed-responsive embed-responsive-16by9"},
+            {"title": "Responsive 4x3", "selector":"iframe,embed", "classes":"embed-responsive embed-responsive-4by3"},
+            {"title": "Responsive 1x1", "selector":"iframe,embed", "classes":"embed-responsive embed-responsive-21by9"}
+        ]},
+        {"title": "Left Image", "selector":"img", "classes":"img-left"},
+        {"title": "Right Image", "selector":"img", "classes":"img-right"},
+        {"title": "Button", "selector":"a", "classes":"btn"}
+    ]
+</config>

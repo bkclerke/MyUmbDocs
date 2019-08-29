@@ -1,0 +1,15 @@
+{    
+    "less.compile": {
+        "compress":  true,  // true => remove surplus whitespace
+        "sourceMap": false,  // true => generate source maps (.css.map files)
+        "out":       true, // false => DON'T output .css files (overridable per-file)
+    },
+    "liveSassCompile.settings.formats":[
+        {
+            "format": "compressed",
+            "extensionName": ".css",
+            "savePath": null
+        }
+    ],
+    "liveSassCompile.settings.generateMap": false
+}

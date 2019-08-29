@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Compiling LESS and SASS
+nav_order: 2
 ---
 
 # Compiling LESS and SASS

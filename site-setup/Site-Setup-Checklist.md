@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Site Setup Checklist
+nav_order: 3
 ---
 
 # Site Setup Checklist

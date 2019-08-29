@@ -40,7 +40,7 @@ These are optional suggestions and should be customized to meet your site needs.
   - Comment out Embed
   - Comment out Headline
 - Update `/config/tinyMceConfig.config` *(configure as needed)*
-  - The [.txt file included](files/config/tinymceconfig.config.txt) contains the snippet `<config key="style_formats">` that includes some basic formatting options. These options can be configured as needed to create more specific selectors in the rich text editor.
+  - The [.txt file included](https://github.com/bkclerke/myumbdocs/blob/master/site-setup/files/Config/tinyMceConfig.config.txt) contains the snippet `<config key="style_formats">` that includes some basic formatting options. These options can be configured as needed to create more specific selectors in the rich text editor.
 - Update `/config/umbracoSettings.config` to remove the trailing slashes for links
   - Set `<addTrailingSlash>false</addTrailingSlash>` in the `<requestHandler>` section
 - Update grid editor views `/views/partials/grid/editors/` (*configure as needed*)

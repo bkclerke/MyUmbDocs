@@ -1,7 +1,7 @@
 ---
 layout: default
 title: README
-nav_exclude: true
+nav_order: 1
 ---
 
 # MyUmbDocs

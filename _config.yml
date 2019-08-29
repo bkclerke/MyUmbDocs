@@ -1,1 +1,5 @@
 remote_theme: pmarsceill/just-the-docs
+aux_links:
+    "MyUmbDocs on GitHub":
+      - "//github.com/bkclerke/myumbdocs"
+footer_content: "Copyright &copy; 2019 Blake Clerke."

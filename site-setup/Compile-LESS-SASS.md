@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Compilining LESS and SASS
-permalink: /site-setup
 ---
 
 # Compiling LESS and SASS

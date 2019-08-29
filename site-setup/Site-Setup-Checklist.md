@@ -1,8 +1,6 @@
 ---
 layout: default
 title: Site Setup Checklist
-permalink: /site-setup
-
 ---
 
 # Site Setup Checklist

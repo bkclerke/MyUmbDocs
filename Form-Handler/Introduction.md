@@ -6,7 +6,7 @@ meta.Description: "DT Form Handler Package Instructions"
 layout: default
 title: Form Handler Package
 # nav_order: 
-# permalink: /Form-Handler
+permalink: /Form-Handler
 has_children: true
 ---
 

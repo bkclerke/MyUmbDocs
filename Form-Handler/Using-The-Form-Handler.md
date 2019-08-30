@@ -11,6 +11,10 @@ parent: Form Handler Package
 
 # Using the Form Handler
 
+**Table of Contents**
+1. TOC
+{:toc}
+
 The process for using the form handler is listed below but please make sure to read the [setup a new form](#setup-a-new-form) section before you proceed with creating new forms using the form handler. It is important to follow the naming conventions otherwise your form will not work.
 
 ## Setup A New Form

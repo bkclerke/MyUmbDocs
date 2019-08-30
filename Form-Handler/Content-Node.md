@@ -1,0 +1,18 @@
+---
+versionFrom: 8
+meta.Title: "DT Form Handler"
+meta.Description: "DT Form Handler Package Instructions"
+
+layout: default
+title: Form Handler on a Content Node
+# nav_order: 
+parent: Form Handler Package
+---
+
+## Using the Form Handler on a Content Node
+
+Once you have [applied the form settings doctype composition](#applying-the-form-settings-doctype-composition) to your content node, the [form settings](#form-settings-explained) will be available to configure and you can insert the Form Handler macro onto the page. The macro can be inserted on the page in multiple ways depending on your Umbraco setup. The simplest way to insert a macro on a page is to navigate to the Rich Text Editor and use the Insert Macro icon to insert the form handler macro and configure the [developer settings](#developer-settings-explained).
+
+![Insert Form Handler Macro In RTE](images/v8/insert-form-handler-macro-rte.gif)
+
+Note that if your macro is configured and setup on a node that does not have the Form Settings applied, make sure you set the Inherit From setting on your Form Handler macro to the correct node containing your form settings.

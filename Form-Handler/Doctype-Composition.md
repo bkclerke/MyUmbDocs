@@ -5,11 +5,11 @@ meta.Description: "DT Form Handler Package Instructions"
 
 layout: default
 title: Form Settings Document Type
-# nav_order: 
+nav_order: 3
 parent: Form Handler Package
 ---
 
-## Applying The Form Settings Doctype Composition
+# Applying The Form Settings Doctype Composition
 
 Before using the Form Handler macro, you will need to make sure that the content editor can setup the [form settings](#form-settings-explained) on a node within Umbraco.
 

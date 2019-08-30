@@ -5,7 +5,7 @@ meta.Description: "DT Form Handler Package Instructions"
 
 layout: default
 title: How It Works
-# nav_order: 
+nav_order: 1
 parent: Form Handler Package
 ---
 

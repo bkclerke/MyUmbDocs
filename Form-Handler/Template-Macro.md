@@ -5,11 +5,11 @@ meta.Description: "DT Form Handler Package Instructions"
 
 layout: default
 title: Render Form Handler Macro on a Template
-# nav_order: 
+nav_order: 4
 parent: Form Handler Package
 ---
 
-## Using the Form Handler Macro Directly on a Template
+# Using the Form Handler Macro Directly on a Template
 
 The Form Handler macro can be used directly on a template by navigating to the template within Umbraco, clicking Insert and selecting the Form Handler macro. 
 

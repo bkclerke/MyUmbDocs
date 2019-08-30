@@ -15,7 +15,7 @@ parent: Form Handler Package
 
 # Using the Form Handler
 
-The process for using the form handler is listed below but please make sure to read the [setup a new form](Form-Handler/Using-The-Form-Handler.html#setup-a-new-form) section before you proceed with creating new forms using the form handler. It is important to follow the naming conventions otherwise your form will not work.
+The process for using the form handler is listed below but please make sure to read the [setup a new form](#setup-a-new-form) section before you proceed with creating new forms using the form handler. It is important to follow the naming conventions otherwise your form will not work.
 
 ## Setup A New Form
 
@@ -31,11 +31,11 @@ The form handler setting for `FormName` requires the main form name value. Do no
 
 ### Create New Macro Partial View Form Files
 
-**Important!** Read [setting up a new form](Form-Handler/Using-The-Form-Handler.html#setup-a-new-form) before creating new macro partial view form files.
+**Important!** Read [setting up a new form](#setup-a-new-form) before creating new macro partial view form files.
 
 For your new form, you will find it easiest to setup the form files within the Umbraco backoffice. This is because when you create a new macro partial view file in the backoffice, Umbraco will create the macro associated with that file as well. This saves you a step.
 
-Navigate to the Settings section, right click on the Partial View Macro Files under the Templating section and click Create. Select New Partial View Macro. Give your macro a name and Save the new file. You will need to do this 3 times for your new form following the naming conventions specified in the [setup a new form](Form-Handler/Using-The-Form-Handler.html#setup-a-new-form) section.
+Navigate to the Settings section, right click on the Partial View Macro Files under the Templating section and click Create. Select New Partial View Macro. Give your macro a name and Save the new file. You will need to do this 3 times for your new form following the naming conventions specified in the [setup a new form](#setup-a-new-form) section.
 
 ![Create Macro Partial View](images/v8/create-macro-partial-view.gif)
 

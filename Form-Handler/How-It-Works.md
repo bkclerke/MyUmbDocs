@@ -75,7 +75,7 @@ These settings are configured by a developer every time the form handler is need
 - Inherit From, InheritFrom, Content Picker
   - Defaults to the current page for form settings unless otherwise specified.
 - Form Name, FormName, textBox
-  - Required field. This must match the macro naming conventions noted in [setting up a new form](Form-Handler/Using-The-Form-Handler.html#setup-a-new-form).
+  - Required field. This must match the macro naming conventions noted in [setting up a new form](/Form-Handler/Using-The-Form-Handler.html#setup-a-new-form).
 - Form Class, FormClass, textBox
   - Optional field to add a class to the form if needed for styling purposes.
 - Required Fields, RequiredFields, textBox

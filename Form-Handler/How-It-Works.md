@@ -11,6 +11,10 @@ parent: Form Handler Package
 
 # How it Works
 
+**Table of Contents**
+1. TOC
+{:toc}
+
 Before the form handler will render a form on the page. It will check for email recipients. If no email recipients are defined, it will assume the form is not being used.
 
 Basic Form Settings are set by the content editor within Umbraco including: 

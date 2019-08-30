@@ -4,13 +4,13 @@ title: Site Setup Checklist
 nav_order: 3
 ---
 
-# Site Setup Checklist
-
-Once your Umbraco site is installed these are some general settings to configure on your site. Please note that this checklist assumes that you know your way around the Umbraco backoffice to perform basic configuration tasks such as modifing document types and user groups. Most updates here consist of file changes in the file system.
-
 **Table of Contents**
 1. TOC
 {:toc}
+
+# Site Setup Checklist
+
+Once your Umbraco site is installed these are some general settings to configure on your site. Please note that this checklist assumes that you know your way around the Umbraco backoffice to perform basic configuration tasks such as modifing document types and user groups. Most updates here consist of file changes in the file system.
 
 ## Working Locally
 

@@ -9,11 +9,11 @@ nav_order: 1
 parent: Form Handler Package
 ---
 
-# How it Works
-
 **Table of Contents**
 1. TOC
 {:toc}
+
+# How it Works
 
 Before the form handler will render a form on the page. It will check for email recipients. If no email recipients are defined, it will assume the form is not being used.
 

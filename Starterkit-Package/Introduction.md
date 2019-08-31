@@ -4,8 +4,8 @@ meta.Title: "DT Starterkit Package"
 meta.Description: "DT Starterkit Package Includes"
 
 layout: default
-title: Compiling LESS and SASS
-nav_order: 3
+title: Starterkit Package
+nav_order: 4
 ---
 
 # DT Starterkit Package

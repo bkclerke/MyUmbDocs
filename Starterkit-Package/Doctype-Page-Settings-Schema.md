@@ -21,7 +21,10 @@ The {{ page.doctype }} Document Type is setup to be used as a Composition Docume
     <dt>Document Type Name</dt> <dd>{{ page.doctype }}</dd>
     <dt>Document Type Alias</dt> <dd>compPageSettings</dd>
     <dt>Document Type Icon</dt> <dd>icon-settings</dd>
-    <dt>Tabs</dt> <dd>{{ page.doctype }}, Markup</dd>
+    <dt>Design Tabs</dt> <dd>{{ page.doctype }}, Markup</dd>
+    <dt>List View</dt> <dd>No custom settings</dd>
+    <dt>Permissions</dt> <dd>No custom settings</dd>
+    <dt>Templates</dt> <dd>No custom settings</dd>
 </dl>
 
 **{{ page.doctype }} Tab Properties:**

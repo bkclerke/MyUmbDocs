@@ -7,6 +7,7 @@ layout: default
 title: Package Includes
 nav_order: 4
 parent: Starterkit Package
+has_children: true
 ---
 
 # Starterkit Package Includes
@@ -65,7 +66,7 @@ The user stylesheet will need to be configured to be used by the rich text edito
 
 ## Scripts
 
-In the scripts folder, we include a `/scss/` or `/less/` directory to store the files used to generate the website stylesheets with the preprocessor you want to use. Typically we use SASS so you will need to add your sass files in this directory. This makes it so that a backoffice user cannot modify the stylesheet directly from the Umbraco backoffice and forces this type of development to be done by a developer. 
+In the scripts folder, there is a `/scss/` or `/less/` directory to store the files used to generate the website stylesheets with the preprocessor you want to use. Typically SASS is the preferred method. You will need to add your sass files in this directory. This makes it so that a backoffice user cannot modify the stylesheet directly from the Umbraco backoffice and forces this type of development to be done by a developer. 
 
 The main.js file is the default file for storing the javascript used by the site. This file would be customized based on what plugins and resources your site needs.
 

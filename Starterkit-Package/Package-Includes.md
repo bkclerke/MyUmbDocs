@@ -39,6 +39,8 @@ The below templates are included in the DT Starterkit Package. The list below re
 ## Macros
 
 - Form Handler
+  - Parameters: 
+    - Title: `Inherit From` Alias: `InheritFrom` Type: `Textarea`
 - Form Email Master
 - Contact Form
 - Contact Email Template

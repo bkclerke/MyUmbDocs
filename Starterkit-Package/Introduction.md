@@ -12,7 +12,7 @@ has_children: true
 
 # DT Starterkit Package
 
-This package setup begins after the [Site Setup Checklist](../Site-Setup/Site-Setup-Checklist.html#site-setup-checklist) has been completed.
+This package setup begins after the [Site Setup Checklist](/MyUmbDocs/site-setup/Site-Setup-Checklist.html#site-setup-checklist) has been completed.
 
 The starterkit package assumes that the build out will follow the [page components method](#) of setting up a website and therefore includes the initial basic components for setting up the page components and installing the [grid layout page component](#).
 

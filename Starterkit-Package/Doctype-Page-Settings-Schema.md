@@ -14,21 +14,22 @@ doctype: Page Settings
 
 # {{ page.doctype }} Document Type Composition Schema
 
-The {{ page.doctype }} Document Type is setup to be used as a Composition Document Type only. This is used for all nodes within the site that act as pages and require meta data that includes schema and open graph information. 
+The {{ page.doctype }} Document Type is setup to be used as a Composition Document Type only. This is used for all nodes within the site that have a page template.
 
 <dl>
-    <dt>Tree Structure</dt> <dd>Document Types > Compositions > XXX</dd>
-    <dt>Document Type Name</dt> <dd>SEO</dd>
-    <dt>Document Type Alias</dt> <dd>compSEO</dd>
+    <dt>Tree Structure</dt> <dd>Document Types > Compositions > {{ page.doctype }}</dd>
+    <dt>Document Type Name</dt> <dd>{{ page.doctype }}</dd>
+    <dt>Document Type Alias</dt> <dd>compPageSettings</dd>
     <dt>Document Type Icon</dt> <dd>icon-settings</dd>
-    <dt>Tabs</dt> <dd>SEO</dd>
+    <dt>Tabs</dt> <dd>{{ page.doctype }}</dd>
 </dl>
 
-**SEO Tab Properties:**
+**{{ page.doctype }} Tab Properties:**
 
 | Title | Alias | Property Type |
 |-------|-------|---------------|
-| Page Title Tag | pageTitleTag | Textstring |
-| Meta Description | metaDescription | Textarea |
-| Open Graph Image | ogImage | Open Graph Image Cropper |
-| Canonical URL | canonicalTag | Textstring |
+| Hide In Navigation | umbracoNaviHide | True/false |
+| Umbraco Redirect | umbracoRedirect | Content Picker |
+| Umbraco Url Alias | umbracoUrlAlias | Textstring |
+| Hide In Sitemap | hideInSitemap | True/false |
+| No Index | noIndex | True/false |

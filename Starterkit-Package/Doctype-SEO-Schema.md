@@ -22,6 +22,6 @@ nav_exclude: true
 
 **SEO Tab Properties**
 
-<dl>
-    <dt>Page Title Tag</dt> <dd>Alias: pageTitleTag, Type: Textstring</dd>
-</dl>
+| Title | Alias | Property Type |
+|-------|-------|---------------|
+| Page Title Tag | pageTitleTag | Textstring |

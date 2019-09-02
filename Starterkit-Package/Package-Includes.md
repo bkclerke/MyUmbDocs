@@ -85,7 +85,7 @@ The main.js file is the default file for storing the javascript used by the site
 - Compositions [Organizational Folder]
   - Form Settings
   - Page Settings
-  - SEO
+  - [SEO](Doctype-SEO-Schema.md)
   - Component Settings
 - Content Only [Organizational Folder]
   - Global Settings

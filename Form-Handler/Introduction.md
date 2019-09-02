@@ -23,9 +23,11 @@ The Form Handler and required files are included in the DT Starterkit Package. T
 - /Views/MacroPartials/Forms/ContactFormEmailTemplate.cshtml
 - /Views/MacroPartials/Forms/ContactFormUserEmailTemplate.cshtml
 
-The corresponding macros are also included in the DT Starterkit Package. Each macro has an associated macro partial view on the macro settings. This is how Umbraco knows what file to render when referencing a macro. The macro aliases are also defined here and are case sensitive with no spaces or special characters. You will notice that these macro aliases correspond to the Form Name when [setting up a new form](Using-The-Form-Handler.html#setup-a-new-form).
+The corresponding macros are also included in the DT Starterkit Package. Each macro has an associated macro partial view on the macro settings. This is how Umbraco knows what file to render when referencing a macro. The macro aliases are also defined here and are case sensitive with no spaces or special characters. You will notice that these macro aliases correspond to the Form Name when [setting up a new form](Using-The-Form-Handler.md#setup-a-new-form).
 
 1. Form Handler
+    - Parameters: 
+      - Title: `Inherit From` Alias: `InheritFrom` Type: `Textarea`
 2. Form Email Master
 3. Contact Form
 4. Contact Form Email Template

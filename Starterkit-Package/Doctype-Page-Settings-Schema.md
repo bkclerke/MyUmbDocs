@@ -21,7 +21,7 @@ The {{ page.doctype }} Document Type is setup to be used as a Composition Docume
     <dt>Document Type Name</dt> <dd>{{ page.doctype }}</dd>
     <dt>Document Type Alias</dt> <dd>compPageSettings</dd>
     <dt>Document Type Icon</dt> <dd>icon-settings</dd>
-    <dt>Tabs</dt> <dd>{{ page.doctype }}</dd>
+    <dt>Tabs</dt> <dd>{{ page.doctype }}, Markup</dd>
 </dl>
 
 **{{ page.doctype }} Tab Properties:**
@@ -33,3 +33,10 @@ The {{ page.doctype }} Document Type is setup to be used as a Composition Docume
 | Umbraco Url Alias | umbracoUrlAlias | Textstring |
 | Hide In Sitemap | hideInSitemap | True/false |
 | No Index | noIndex | True/false |
+
+**Markup Tab Properties:**
+
+| Title | Alias | Property Type | Description |
+|-------|-------|---------------|-------------|
+| Head Tag | cpHead | Textarea | Inserted in the head tag markup. |
+| Scripts | cpScripts | Textarea | Inserted at the bottom of the body tag markup. |

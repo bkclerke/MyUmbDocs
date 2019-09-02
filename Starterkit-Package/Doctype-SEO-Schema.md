@@ -12,6 +12,8 @@ nav_exclude: true
 
 # SEO Document Type Composition Schema
 
+The SEO Document Type is setup to be used as a Composition Document Type only. This is used for all nodes within the site that act as pages and require meta data that includes schema and open graph information. 
+
 <dl>
     <dt>Tree Structure</dt> <dd>Document Types > Compositions > XXX</dd>
     <dt>Document Type Name</dt> <dd>SEO</dd>
@@ -20,8 +22,11 @@ nav_exclude: true
     <dt>Tabs</dt> <dd>SEO</dd>
 </dl>
 
-**SEO Tab Properties**
+**SEO Tab Properties:**
 
 | Title | Alias | Property Type |
 |-------|-------|---------------|
 | Page Title Tag | pageTitleTag | Textstring |
+| Meta Description | metaDescription | Textarea |
+| Open Graph Image | ogImage | Open Graph Image Cropper
+| Canonical URL | canonicalTag | Textstring | |

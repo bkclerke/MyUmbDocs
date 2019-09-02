@@ -28,5 +28,5 @@ The SEO Document Type is setup to be used as a Composition Document Type only. T
 |-------|-------|---------------|
 | Page Title Tag | pageTitleTag | Textstring |
 | Meta Description | metaDescription | Textarea |
-| Open Graph Image | ogImage | Open Graph Image Cropper
-| Canonical URL | canonicalTag | Textstring | |
+| Open Graph Image | ogImage | Open Graph Image Cropper |
+| Canonical URL | canonicalTag | Textstring |

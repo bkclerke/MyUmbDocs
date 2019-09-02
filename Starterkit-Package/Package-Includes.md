@@ -10,7 +10,6 @@ parent: Starterkit Package
 ---
 
 # Starterkit Package Includes
-{:no_toc}
 
 Listed below are all the items included in the DT Starterkit Package.
 
@@ -36,7 +35,6 @@ The below templates are included in the DT Starterkit Package. The list below re
 - /Views/Partials/_PageComponents.cshtml
 - /Views/Partials/_PC_Switch.cshtml
 - /Views/Partials/PageComponents/_PC_GridLayout.cshtml
-- /Views/Partials/PageComponents/_PC_FormSection.cshtml (*requires form handler*)
 
 ## Macros
 
@@ -61,7 +59,7 @@ The user stylesheet will need to be configured to be used by the rich text edito
 - /css/user.css
 - /css/bootstrap.css
 - /css/fa-all.css
-- /css/fonts/...
+- /css/fonts/ [Directory]
 
 ## Scripts
 
@@ -81,7 +79,6 @@ The main.js file is the default file for storing the javascript used by the site
 - Page Components Folder
 - Page Components [Organizational Folder]
   - Grid Layout
-  - Form Section
 - Compositions [Organizational Folder]
   - Form Settings
   - Page Settings

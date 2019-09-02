@@ -12,3 +12,9 @@ nav_exclude: true
 
 # SEO Document Type Composition Schema
 
+<dl>
+    <dt>Tree Structure:</dt> <dd>Document Types > Compositions > XXX</dd>
+    <dt>Document Type Name:</dt> <dd>SEO</dd>
+    <dt>Document Type Alias:</dt> <dd>`compSEO`</dd>
+    <dt>Document Type Icon:</dt> <dd>`icon-settings`</dd>
+</dl>

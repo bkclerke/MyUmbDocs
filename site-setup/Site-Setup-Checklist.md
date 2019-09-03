@@ -4,9 +4,13 @@ title: Site Setup Checklist
 nav_order: 3
 ---
 
-**Table of Contents**
+# Table of Contents
+{: .no_toc .text-delta }
+
 1. TOC
 {:toc}
+
+---
 
 # Site Setup Checklist
 

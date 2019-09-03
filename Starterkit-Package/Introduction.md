@@ -8,9 +8,13 @@ title: Starterkit Package
 nav_order: 4
 permalink: /Starterkit-Package
 has_children: true
+
+packageVersion: 2
 ---
 
-# DT Starterkit Package
+# DT Starterkit Package v {{ page.packageVersion }}
+
+**Compatible with Umbraco Version {{ page.versionFrom }}**
 
 This package setup begins after the [Site Setup Checklist](/MyUmbDocs/site-setup/Site-Setup-Checklist.html#site-setup-checklist) has been completed.
 

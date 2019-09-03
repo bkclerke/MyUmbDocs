@@ -60,6 +60,6 @@ This email is what is sent to your user who fills out your form when an email ad
 
 <a href="https://github.com/bkclerke/MyUmbDocs/blob/master/Form-Handler/files/Views/MacroPartials/ContactFormUserEmailTemplate.cshtml" target="_blank" class="btn btn-purple">View User Email Template Example</a>
 
-here is what the pre-configured contact user email template looks like that is received by the user filling out the form.
+Here is what the pre-configured contact user email template looks like that is received by the user filling out the form.
 
 ![Contact Form Email Template](images/v8/contact-form-user-email.png)

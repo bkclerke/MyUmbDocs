@@ -66,9 +66,9 @@ The stylesheets folder contains various stylesheets related to the indiviual pro
 - `~/css/bootstrap.css`
   - Unmodified vendor stylesheet is included in the starterkit.
 - `~/css/fa-all.css`
-  - Typically font awesome is used in projects so this unmodified vendor stylesheet is included in the starterkit.
+  - Unmodified vendor stylesheet is included in the starterkit.
 - `~/css/fonts/` [Directory]
-  - The fonts folder in the /css/ directory includes font awesome webfont files. 
+  - This directory includes unmodified vendor font awesome webfont files.
 
 ## Scripts
 

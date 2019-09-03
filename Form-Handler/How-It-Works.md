@@ -43,16 +43,9 @@ Macro parameters for the form handler must be setup by a developer. These are th
 
 ## Form Settings Explained
 
-The Form Settings Document Type (aka doctype) is setup in the Compositions organizational folder. This doctype acts as composition for various nodes that require form settings. Using this method insures that all doctypes that need the form settings will have the same settings applied.
+The Form Settings Document Type (aka doctype) is setup in the Compositions organizational folder. This doctype acts as composition for various nodes that require form settings. Using this method insures that all doctypes that need the form settings will have the same settings applied. [Read more](/MyUmbDocs/Starterkit-Package/Package-Includes.html#important-document-type-naming-conventions) about document type setup and naming conventions used in the starterkit here.
 
 ![Form Settings Doctype](images/v8/form-settings-doctype.png)
-
-#### Important Note About Doctype Naming Conventions
-{: .no_toc }
-
-![Form Settings Doctype Naming](images/v8/form-settings-doctype-naming.png)
-
-The naming convention for composition doctypes are prefixed with `comp` and then the doctype name in a camel case format. For example, the Form Settings doctype alias is `compFormSettings`. Compositions also use the `icon-settings` in black for the doctype icon. This practice makes it easy to recognize when selecting doctypes within Umbraco. [Read more](/MyUmbDocs/Starterkit-Package/Package-Includes.html#important-document-type-naming-conventions) about the naming convention used in projects here.
 
 ### Document Type Properties
 

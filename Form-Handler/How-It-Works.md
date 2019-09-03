@@ -17,7 +17,7 @@ parent: Form Handler Package
 
 Before the form handler will render a form on the page. It will check for email recipients. If no email recipients are defined, it will assume the form is not being used.
 
-Basic Form Settings are set by the content editor within Umbraco including: 
+Basic **Form Settings** are set by the content editor within Umbraco including: 
 
 - Email From
 - Email Recipients
@@ -25,9 +25,9 @@ Basic Form Settings are set by the content editor within Umbraco including:
 - Success Redirect Page
 - Error Redirect Page
 
-These settings are on the Form Settings Composition DocumentType included in the DT Starterkit Package.
+These settings are on the Form Settings document type composition included in the starterkit package.
 
-Macro Parameters on the Form Handler Macro include:
+Macro parameters for the form handler must be setup by a developer. These are the **Developer Settings**:
 
 - Inherit From
 - Form Name
@@ -37,17 +37,13 @@ Macro Parameters on the Form Handler Macro include:
 - User Email Field
 - User Email Subject
 
-These settings are defined by a developer when setting up the form handler on a page.
-
-Inherit From can be used to override content editor settings on a particular page to use universal settings or settings for another page for the Form Handler.
-
 ## Form Settings Explained
 
-The Form Settings DocumentType (aka doctype) is setup in the Compositions organizational folder. This doctype acts as composition for various nodes that require form settings. Using this method insures that all doctypes that need the form settings will have the same settings applied.
+The Form Settings Document Type (aka doctype) is setup in the Compositions organizational folder. This doctype acts as composition for various nodes that require form settings. Using this method insures that all doctypes that need the form settings will have the same settings applied.
 
 ![Form Settings Doctype](images/v8/form-settings-doctype.png)
 
-**Important Note About Doctype Naming Conventions** The naming convention for composition doctypes are prefixed with "comp" and then the doctype name in a camel casing format. For example, the Form Settings doctype alias is `compFormSettings`. Compositions also use the general settings icon in black for the doctype icon. This practice makes it easy to recognize when selecting doctypes within Umbraco.
+**Important Note About Doctype Naming Conventions** The naming convention for composition doctypes are prefixed with "comp" and then the doctype name in a camel casing format. For example, the Form Settings doctype alias is `compFormSettings`. Compositions also use the general settings icon in black for the doctype icon. This practice makes it easy to recognize when selecting doctypes within Umbraco. [Read more about the naming convention used here](/MyUmbDocs/Starterkit-Package/Package-Includes.html#documenttypes).
 
 ![Form Settings Doctype Naming](images/v8/form-settings-doctype-naming.png)
 
@@ -71,7 +67,7 @@ These settings are configured by a developer every time the form handler is need
 
 | Title | Alias | Property Type | Description |
 |-------|-------|---------------|-------------|
-| Inherit From | InheritFrom | Content Picker | Defaults to the current page for form settings unless otherwise specified.|
+| Inherit From | InheritFrom | Content Picker | Defaults to the current page for form settings unless otherwise specified. Typical uses include overriding form settings on a particular page to use universal form settings or form settings from another page. |
 | Form Name | FormName | textBox | Required field. This must match the macro naming conventions noted in [setting up a new form](Using-The-Form-Handler.md#setup-a-new-form). |
 | Form Class | FormClass | textBox | Optional field to add a class to the form if needed for styling purposes. |
 | Required Fields | RequiredFields | textBox | CSV formatting for names of required fields on the form. |

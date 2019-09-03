@@ -39,6 +39,11 @@ Navigate to the Settings section, right click on the Partial View Macro Files un
 
 ![Create Macro Partial View](images/v8/create-macro-partial-view.gif)
 
+### Configure Your Form
+
+The beauty of Umbraco lies in the fact that you get to control your markup. Your form is your code. Using bootstrap there is a recommended way of setting up forms. You can view an example <a href="https://github.com/bkclerke/MyUmbDocs/blob/master/Form-Handler/files/Views/MacroPartials/ContactForm.cshtml" target="_blank">contact form</a> here. 
+
+In order to pass your form data to through the form handler and to the email template, you will need to make sure that your inputs have a valid `name=""` attribute. The name is what gets passed through the form handler and sent back in the email. You will see these values reflected in the email and user email template macro partial view files.
 
 ### Configure Email Template
 

@@ -1,0 +1,30 @@
+﻿@inherits Umbraco.Web.Macros.PartialViewMacroPage
+<div class="form-row">
+    <div class="col-md-4">
+        <div class="form-group">
+            <label for="Name">Name<span class="r">*</span></label>
+            <input type="text" id="Name" name="Name" placeholder="Your Name" class="required form-control" required/>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group">
+            <label for="Email">Email<span class="r">*</span></label>
+            <input type="Email" id="Email" name="Email" placeholder="Your Email Address" class="required form-control" required />
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group">
+            <label for="Phone">Phone</label>
+            <input type="tel" id="Phone" name="Phone" placeholder="(123) 456-7890" class="form-control" />
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="form-group">
+            <label for="Comments">What can we help you with?</label>
+            <textarea name="Comments" id="Comments" placeholder="Ask us anything" class="form-control"></textarea>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <p><input type="submit" value="Submit" class="btn btn-default" /></p>
+    </div>
+</div>

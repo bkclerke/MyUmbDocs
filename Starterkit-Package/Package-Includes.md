@@ -14,7 +14,7 @@ packageVersion: 2
 
 # Starterkit Package Includes
 
-*Version {{ page.packageVersion }} Compatible with Umbraco {{ page.versionFrom }}*
+*Version {{ page.packageVersion }} Compatible with Umbraco {{ page.versionFrom }}+*
 
 Listed below are all the items included in the DT Starterkit Package.
 
@@ -59,21 +59,25 @@ The below templates are included in the DT Starterkit Package. The list below re
 
 ## Stylesheets
 
-The user stylesheet will need to be configured to be used by the rich text editor in Umbraco. It is typically an empty file that just imports the main css file to display some of the styling into the rich text editor within Umbraco. The fonts folder in the /css/ directory includes font awesome webfont files. 
+The stylesheets folder contains various stylesheets related to the indiviual project. The starterkit includes the following for getting started.
 
-- /css/user.css
-- /css/bootstrap.css
-- /css/fa-all.css
-- /css/fonts/ [Directory]
+- `~/css/user.css`
+  - The user stylesheet will need to be configured to be used by the rich text editor in Umbraco. It is typically an empty file that just imports the main css file to display some of the styling into the rich text editor within Umbraco.
+- `~/css/bootstrap.css`
+  - Unmodified vendor stylesheet is included in the starterkit.
+- `~/css/fa-all.css`
+  - Typically font awesome is used in projects so this unmodified vendor stylesheet is included in the starterkit.
+- `~/css/fonts/` [Directory]
+  - The fonts folder in the /css/ directory includes font awesome webfont files. 
 
 ## Scripts
 
-In the scripts folder, there is a `/scss/` or `/less/` directory to store the files used to generate the website stylesheets with the preprocessor you want to use. Typically SASS is the preferred method. You will need to add your sass files in this directory. This makes it so that a backoffice user cannot modify the stylesheet directly from the Umbraco backoffice and forces this type of development to be done by a developer. 
+The scripts folder contains various scripts related to the indiviual project. The starterkit includes the following for getting started.
 
-The main.js file is the default file for storing the javascript used by the site. This file would be customized based on what plugins and resources your site needs.
-
-- /scripts/scss/ [Directory]
-- /scripts/main.js
+- `~/scripts/scss/` [Directory]
+  - In the scripts folder, there is a `/scss/` or `/less/` directory to store the files used to generate the website stylesheets with the preprocessor you want to use. Typically SASS is the preferred method. You will need to add your sass files in this directory. This makes it so that a backoffice user cannot modify the stylesheet directly from the Umbraco backoffice and forces this type of development to be done by a developer. 
+- `~/scripts/main.js`
+  - The main.js file is the default file for storing the javascript used by the site. This file would be customized based on what plugins and resources your site needs.
 
 ## DocumentTypes
 
@@ -120,6 +124,6 @@ The main.js file is the default file for storing the javascript used by the site
 
 PageComponents.cs needs to be updated during buildout with various doctype aliases that allow page components to build out the page.
 
-- /App_Code/PageComponents.cs
-- /App_Plugins/BetterLabel/ [Directory]
-- /Robots.txt
+- `~/App_Code/PageComponents.cs`
+- `~/App_Plugins/BetterLabel/` [Directory]
+- `~/Robots.txt`

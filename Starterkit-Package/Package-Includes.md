@@ -18,7 +18,9 @@ packageVersion: 2
 
 Listed below are all the items included in the DT Starterkit Package.
 
-**Table of Contents**
+## Table of Contents
+{: .no_toc .text-delta }
+
 1. TOC
 {:toc}
 
@@ -97,6 +99,7 @@ The scripts folder contains various scripts related to the indiviual project. Th
   - [Nested Address](Doctype-Nested-Address-Schema.md)
 
 ### Important Document Type Naming Conventions
+{: .no_toc }
 
 Default naming conventions for document types is the doctype name in camel case format. For example, `componentsPage`, `articlePage` and `home`.
 

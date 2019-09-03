@@ -122,8 +122,8 @@ The scripts folder contains various scripts related to the indiviual project. Th
 
 ## Custom Code
 
-PageComponents.cs needs to be updated during buildout with various doctype aliases that allow page components to build out the page.
-
 - `~/App_Code/PageComponents.cs`
+  - PageComponents.cs needs to be updated during buildout with various document type aliases in order to auto generate the Page Components Folder child node type.
 - `~/App_Plugins/BetterLabel/` [Directory]
+  - This is a custom property type.
 - `~/Robots.txt`

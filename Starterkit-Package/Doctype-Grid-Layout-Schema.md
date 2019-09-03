@@ -4,12 +4,12 @@ meta.Title: "DT Starterkit Package"
 meta.Description: "DT Starterkit Package Includes"
 
 layout: default
-title: Page Components Folder Document Type
+title: Grid Layout Document Type
 parent: Package Includes
 grand_parent: Starterkit Package
 nav_exclude: true
 
-doctype: Page Components Folder
+doctype: Grid Layout
 ---
 
 # {{ page.doctype }} Document Type Schema
@@ -21,12 +21,19 @@ The {{ page.doctype }} Document Type is used for organizing various page compone
 {{ site.pc_naming }}
 
 <dl>
-    <dt>Tree Structure</dt> <dd>Document Types > {{ page.doctype }}</dd>
+    <dt>Tree Structure</dt> <dd>Document Types > Page Components > {{ page.doctype }}</dd>
     <dt>Document Type Name</dt> <dd>{{ page.doctype }}</dd>
-    <dt>Document Type Alias</dt> <dd>pcFolder</dd>
-    <dt>Document Type Icon</dt> <dd>icon-folder-close color-orange</dd>
-    <dt>Design Tabs</dt> <dd>No custom settings</dd>
+    <dt>Document Type Alias</dt> <dd>pcGridLayout</dd>
+    <dt>Document Type Icon</dt> <dd>icon-grid color-orange</dd>
+    <dt>Design Tabs</dt> <dd>Content</dd>
+    <dt>Design Tab Compositions</dt> <dd>Component Settings</dd>
     <dt>List View</dt> <dd>No custom settings</dd>
-    <dt>Permissions - Allowed child node types</dt> <dd>Site Specific Page Components</dd>
+    <dt>Permissions - Allowed child node types</dt> <dd>Site Specific Macro Items</dd>
     <dt>Templates</dt> <dd>Parent Redirect</dd>
 </dl>
+
+**Content Tab Properties:**
+
+| Title | Alias | Property Type |
+|-------|-------|---------------|
+| Grid | grid | Grid Layout |

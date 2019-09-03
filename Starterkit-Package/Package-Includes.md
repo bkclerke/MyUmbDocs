@@ -8,6 +8,8 @@ title: Package Includes
 nav_order: 4
 parent: Starterkit Package
 # has_children: true
+
+packageVersion: 2
 ---
 
 # Starterkit Package Includes

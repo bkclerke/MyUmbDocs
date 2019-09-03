@@ -53,3 +53,5 @@ This email is what is sent to the email recipients configured on the form settin
 The Contact Form User Email Template is plain html markup that is rendered within the `{INNER_CONTENT}` area of the Form Email Master Template. The markup you insert here will need to be compatible with email clients.
 
 This email is what is sent to your user who fills out your form when an email address is provided.
+
+<a href="https://github.com/bkclerke/MyUmbDocs/blob/master/Form-Handler/files/Views/MacroPartials/ContactFormUserEmailTemplate.cshtml" target="_blank" class="btn btn-purple">View User Email Template Example</a>

@@ -46,7 +46,7 @@ The Contact Form Email Template is plain html markup that is rendered within the
 
 This email is what is sent to the email recipients configured on the form settings.
 
-[View Example Email Template](Email-Template-Example.md){: .btn .btn-purple }
+[View Email Template Example](Email-Template-Example.md){: .btn .btn-purple }
 
 ### Configure User Email Template
 

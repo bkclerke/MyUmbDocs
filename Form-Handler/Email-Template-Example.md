@@ -9,3 +9,5 @@ parent: Using The Form Handler
 nav_exclude: true
 ---
 
+# Email Template
+

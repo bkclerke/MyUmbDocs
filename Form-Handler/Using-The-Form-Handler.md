@@ -46,7 +46,7 @@ The Contact Form Email Template is plain html markup that is rendered within the
 
 This email is what is sent to the email recipients configured on the form settings.
 
-[View Email Template Example](files/Views/MacroPartials/ContactFormEmailTemplate.cshtml){: .btn .btn-purple }
+<a href="https://github.com/bkclerke/MyUmbDocs/blob/master/Form-Handler/files/Views/MacroPartials/ContactFormEmailTemplate.cshtml" target="_blank" class="btn btn-purple">View Email Template Example</a>
 
 ### Configure User Email Template
 

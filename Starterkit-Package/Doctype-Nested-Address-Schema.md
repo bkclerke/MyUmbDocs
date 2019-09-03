@@ -24,7 +24,7 @@ The {{ page.doctype }} Document Type is setup to be used for Content only. The n
     <dt>Design Tabs</dt> <dd>Content</dd>
     <dt>List View</dt> <dd>No custom settings</dd>
     <dt>Permissions</dt> <dd>Is an Element Type</dd>
-    <dt>Templates</dt> <dd>Parent Redirect</dd>
+    <dt>Templates</dt> <dd>No custom settings</dd>
 </dl>
 
 **Content Tab Properties:**

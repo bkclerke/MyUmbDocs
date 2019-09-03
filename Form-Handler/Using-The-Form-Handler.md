@@ -46,6 +46,8 @@ The Contact Form Email Template is plain html markup that is rendered within the
 
 This email is what is sent to the email recipients configured on the form settings.
 
+[View Example Email Template](Email-Template-Example.md){: .btn .btn-purple }
+
 ### Configure User Email Template
 
 The Contact Form User Email Template is plain html markup that is rendered within the `{INNER_CONTENT}` area of the Form Email Master Template. The markup you insert here will need to be compatible with email clients.

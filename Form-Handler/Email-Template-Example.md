@@ -4,8 +4,8 @@ meta.Title: "DT Form Handler"
 meta.Description: "DT Form Handler Package Instructions"
 
 layout: default
-title: Setup Your Email
-nav_order: 7
-parent: Form Handler Package
+title: Email Template Example
+parent: Using The Form Handler
+nav_exclude: true
 ---
 

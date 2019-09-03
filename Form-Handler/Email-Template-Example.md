@@ -9,5 +9,5 @@ parent: Using The Form Handler
 nav_exclude: true
 ---
 
-# Email Template
+# Contact Form Email Template Example
 

@@ -12,8 +12,9 @@ has_children: true
 packageVersion: 2
 ---
 
-# DT Starterkit Package v {{ page.packageVersion }}
+# DT Starterkit Package 
 
+**Version {{ page.packageVersion }}**
 **Compatible with Umbraco Version {{ page.versionFrom }}**
 
 This package setup begins after the [Site Setup Checklist](/MyUmbDocs/site-setup/Site-Setup-Checklist.html#site-setup-checklist) has been completed.

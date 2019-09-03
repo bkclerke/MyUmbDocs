@@ -24,7 +24,7 @@ The {{ page.doctype }} Document Type is used for organizing various page compone
 
 {{ site.pc_naming }}
 
-### Page Component Schema
+## Page Component Schema
 
 {% endif %}
 

@@ -42,7 +42,7 @@ Navigate to the Settings section, right click on the Partial View Macro Files un
 
 ### Configure Email Template
 
-The Contact Form Email Template is plain html markup that is rendered within the `{INNER_CONTENT}` area of the Form Email Master Template. The markup you insert here will need to be compatible with email clients.
+The Contact Form Email Template is plain html markup that is rendered within the `{INNER_CONTENT}` area of the <a href="https://github.com/bkclerke/MyUmbDocs/blob/master/Form-Handler/files/Views/MacroPartials/FormEmailMaster.cshtml" target="_blank">Form Email Master</a> Macro Partial View file. The markup you insert here will need to be compatible with email clients.
 
 This email is what is sent to the email recipients configured on the form settings.
 

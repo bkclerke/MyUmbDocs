@@ -18,7 +18,7 @@ The Form Handler and required files are included in the DT Starterkit Package. T
 
 - `~/Views/MacroPartials/FormHandler.cshtml`
 - `~/Views/MacroPartials/FormEmailMaster.cshtml`
-- `~/Views/MacroPartials/Forms/` [*Optional Directory for Organizational Purposes*]
+- `~/Views/MacroPartials/Forms/` [Optional Directory for Organizational Purposes]
 - `~/Views/MacroPartials/Forms/ContactForm.cshtml`
 - `~/Views/MacroPartials/Forms/ContactFormEmailTemplate.cshtml`
 - `~/Views/MacroPartials/Forms/ContactFormUserEmailTemplate.cshtml`

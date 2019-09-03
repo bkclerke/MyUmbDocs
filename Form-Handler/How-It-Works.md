@@ -9,7 +9,7 @@ nav_order: 1
 parent: Form Handler Package
 ---
 
-## Table of Contents
+# Table of Contents
 {: .no_toc .text-delta }
 
 1. TOC
@@ -18,7 +18,6 @@ parent: Form Handler Package
 ---
 
 # How It Works
-{: .no_toc }
 
 Before the form handler will render a form on the page. It will check for email recipients. If no email recipients are defined, it will assume the form is not being used.
 

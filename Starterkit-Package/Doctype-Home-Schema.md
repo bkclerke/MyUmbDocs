@@ -21,7 +21,7 @@ The {{ page.doctype }} Document Type is setup to be the root of the website.
     <dt>Document Type Name</dt> <dd>{{ page.doctype }}</dd>
     <dt>Document Type Alias</dt> <dd>home</dd>
     <dt>Document Type Icon</dt> <dd>icon-home</dd>
-    <dt>Design Tabs</dt> <dd>SEO Composition</dd>
+    <dt>Design Tab Compositions</dt> <dd>SEO</dd>
     <dt>List View</dt> <dd>No custom settings</dd>
     <dt>Permissions</dt> <dd>Allow as root</dd>
     <dt>Permissions - Allowed child node types</dt> <dd>Components Page, Global Settings</dd>

@@ -12,6 +12,8 @@ has_children: true
 
 # DT Form Handler Package
 
+*Compatible with Umbraco {{ page.versionFrom }}+*
+
 The form handler is a single Umbraco macro that handles form submissions for *all forms* within an Umbraco site. Please keep this in mind if you ever need to make changes directly to the form handler itself.
 
 The Form Handler and required files are included in the DT Starterkit Package. The files listed below are the files required by the Form Handler to handle form submissions as well as the necessary files for the default Contact Form included.

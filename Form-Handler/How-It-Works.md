@@ -53,16 +53,13 @@ The Form Settings DocumentType (aka doctype) is setup in the Compositions organi
 
 **Document Type Properties:**
 
-- Email From, emailFrom, textstring
-  - The from address of an email. This will default to no-reply@domain.com
-- Email Recipients, emailRecipients, textarea
-  - The list of email recipients the form sends too. One per line. If this is empty, the form handler will assume the form is not in use and not load on the page.
-- Email Subject, emailSubject, textstring
-  - The email subject of the form. This defaults to "Form Submission Received"
-- Success Redirect Page, successRedirectPage, Content Picker
-  - The page to display after a successful submission.
-- Error Redirect Page, errorRedirectPage, Content Picker
-  - The page to display when an error occurs.
+| Title | Alias | Property Type | Description |
+|-------|-------|---------------|-------------|
+| Email From | emailFrom | textstring | The from address of an email. This will default to no-reply@domain.com |
+| Email Recipients | emailRecipients | textarea | The list of email recipients the form sends too. One per line. If this is empty, the form handler will assume the form is not in use and not load on the page. |
+| Email Subject | emailSubject | textstring | The email subject of the form. This defaults to "Form Submission Received" |
+| Success Redirect Page | successRedirectPage | Content Picker | The page to display after a successful submission. |
+| Error Redirect Page | errorRedirectPage | Content Picker | The page to display when an error occurs. |
 
 ## Developer Settings Explained
 
@@ -72,20 +69,15 @@ These settings are configured by a developer every time the form handler is need
 
 **Form Handler Macro Parameters:**
 
-- Inherit From, InheritFrom, Content Picker
-  - Defaults to the current page for form settings unless otherwise specified.
-- Form Name, FormName, textBox
-  - Required field. This must match the macro naming conventions noted in [setting up a new form](Using-The-Form-Handler.md#setup-a-new-form).
-- Form Class, FormClass, textBox
-  - Optional field to add a class to the form if needed for styling purposes.
-- Required Fields, RequiredFields, textBox
-  - CSV formatting for names of required fields on the form.
-- Send User Email, SendUserEmail, trueFalse
-  - if true, the form handler will attempt to send the user a confirmation email upon successful form submission.
-- User Email Field, UserEmailField, textBox
-  - If sending a user email is true, the user email field will need to be definied. This value is the name of the email field that correlates to the form markup.
-- User Email Subject, UserEmailSubject, textBox
-  - If empty, the user email subject will default to "Thank you for contacting us."
+| Title | Alias | Property Type | Description |
+|-------|-------|---------------|-------------|
+| Inherit From | InheritFrom | Content Picker | Defaults to the current page for form settings unless otherwise specified.|
+| Form Name | FormName | textBox | Required field. This must match the macro naming conventions noted in [setting up a new form](Using-The-Form-Handler.md#setup-a-new-form). |
+| Form Class | FormClass | textBox | Optional field to add a class to the form if needed for styling purposes. |
+| Required Fields | RequiredFields | textBox | CSV formatting for names of required fields on the form. |
+| Send User Email | SendUserEmail | trueFalse | if true, the form handler will attempt to send the user a confirmation email upon successful form submission. |
+| User Email Field | UserEmailField | textBox | If sending a user email is true, the user email field will need to be definied. This value is the name of the email field that correlates to the form markup. |
+| User Email Subject | UserEmailSubject | textBox | If empty, the user email subject will default to "Thank you for contacting us." |
 
 ## Form Submission Handling Explained
 

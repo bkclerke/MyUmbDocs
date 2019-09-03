@@ -12,7 +12,7 @@ parent: Starterkit Package
 
 # Starterkit Package Includes
 
-*Version {{ page.packageVersion }} Compatible with Umbraco Version {{ page.versionFrom }}*
+*Version {{ page.packageVersion }} Compatible with Umbraco {{ page.versionFrom }}*
 
 Listed below are all the items included in the DT Starterkit Package.
 

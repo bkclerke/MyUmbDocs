@@ -83,7 +83,7 @@ The scripts folder contains various scripts related to the indiviual project. Th
 
 - [Home](Doctype-Home-Schema.md)
 - [Article Page](Doctype-Article-Page-Schema.md)
-- Components Page
+- [Components Page](Doctype-Comp-Page-Schema.md)
 - [Page Components Folder](Doctype-Page-Comp-Folder-Schema.md)
 - Page Components [Organizational Folder]
   - [Grid Layout](Doctype-Grid-Layout-Schema.md)

@@ -22,20 +22,20 @@ Listed below are all the items included in the DT Starterkit Package.
 
 The below templates are included in the DT Starterkit Package. The list below reflects the master template structure it should be reflected in the Umbraco Templates folder.
 
-- Master
-  - Components Page
-  - Article Page
-- Parent Redirect
-- XML Sitemap
+- Master `~/Views/master.cshtml`
+  - Components Page `~/Views/componentsPage.cshtml`
+  - Article Page `~/Views/articlePage.cshtml`
+- Parent Redirect `~/Views/parentRedirect.cshtml`
+- XML Sitemap `~/Views/xMLSitemap.cshtml`
 
 ## Partial Views
 
-- /Views/Partials/_MetaData.cshtml
-- /Views/Partials/_Header.cshtml
-- /Views/Partials/_Footer.cshtml
-- /Views/Partials/_PageComponents.cshtml
-- /Views/Partials/_PC_Switch.cshtml
-- /Views/Partials/PageComponents/_PC_GridLayout.cshtml
+- `~/Views/Partials/_MetaData.cshtml`
+- `~/Views/Partials/_Header.cshtml`
+- `~/Views/Partials/_Footer.cshtml`
+- `~/Views/Partials/_PageComponents.cshtml`
+- `~/Views/Partials/_PC_Switch.cshtml`
+- `~/Views/Partials/PageComponents/_PC_GridLayout.cshtml`
 
 ## Macros
 

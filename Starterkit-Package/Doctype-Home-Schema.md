@@ -4,7 +4,7 @@ meta.Title: "DT Starterkit Package"
 meta.Description: "DT Starterkit Package Includes"
 
 layout: default
-title: Home Document Type Composition
+title: Home Document Type
 parent: Package Includes
 grand_parent: Starterkit Package
 nav_exclude: true
@@ -12,7 +12,7 @@ nav_exclude: true
 doctype: Home
 ---
 
-# {{ page.doctype }} Document Type Composition Schema
+# {{ page.doctype }} Document Type Schema
 
 The {{ page.doctype }} Document Type is setup to be the root of the website. 
 

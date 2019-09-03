@@ -6,4 +6,4 @@ footer_content: "Copyright &copy; 2019 Blake Clerke."
 
 pc_descrip: "For page component items, or items without a template or view associated to preview, a different document type icon color is chosen. In this case, the starterkit and various pre-defined page components use an orange icon to denote that the node is for content only purposes and does not have a page / view associated with it. The only template that is assigned to page components is the included Parent Redirect template. This makes sure that if anyone were to navigate to a page component directly, they would be redirected to the parent page where they can see the page component on the page."
 
-pc_naming: "Important note about page component naming convention. Make sure that your page component document type alias is prefixed with the lowercase letters `pc`."
+pc_naming: "Important note about page component naming convention. Make sure that all page component document type aliases are prefixed with the lowercase letters `pc` to denote that this document type is setup as a page component."

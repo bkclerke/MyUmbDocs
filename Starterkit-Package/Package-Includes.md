@@ -74,7 +74,6 @@ The main.js file is the default file for storing the javascript used by the site
 ## DocumentTypes
 
 - [Home](Doctype-Home-Schema.md)
-- Blog Page
 - Article Page
 - Components Page
 - Page Components Folder

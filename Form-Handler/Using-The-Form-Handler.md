@@ -48,6 +48,10 @@ This email is what is sent to the email recipients configured on the form settin
 
 <a href="https://github.com/bkclerke/MyUmbDocs/blob/master/Form-Handler/files/Views/MacroPartials/ContactFormEmailTemplate.cshtml" target="_blank" class="btn btn-purple">View Email Template Example</a>
 
+Here is what the pre-configured contact email template looks like that is received by the recipients.
+
+![Contact Form Email Template](images/v8/contact-form-email.png)
+
 ### Configure User Email Template
 
 The Contact Form User Email Template is plain html markup that is rendered within the `{INNER_CONTENT}` area of the <a href="https://github.com/bkclerke/MyUmbDocs/blob/master/Form-Handler/files/Views/MacroPartials/FormEmailMaster.cshtml" target="_blank">Form Email Master</a> Macro Partial View file. The markup you insert here will need to be compatible with email clients.
@@ -55,3 +59,7 @@ The Contact Form User Email Template is plain html markup that is rendered withi
 This email is what is sent to your user who fills out your form when an email address is provided.
 
 <a href="https://github.com/bkclerke/MyUmbDocs/blob/master/Form-Handler/files/Views/MacroPartials/ContactFormUserEmailTemplate.cshtml" target="_blank" class="btn btn-purple">View User Email Template Example</a>
+
+here is what the pre-configured contact user email template looks like that is received by the user filling out the form.
+
+![Contact Form Email Template](images/v8/contact-form-user-email.png)

@@ -13,6 +13,7 @@ packageVersion: 2
 ---
 
 # Starterkit Package Includes
+{: .no_toc }
 
 *Version {{ page.packageVersion }} Compatible with Umbraco {{ page.versionFrom }}+*
 

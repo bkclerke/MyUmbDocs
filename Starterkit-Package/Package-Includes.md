@@ -40,20 +40,18 @@ The below templates are included in the DT Starterkit Package. The list below re
 ## Macros
 
 - Form Handler
+  - Macro partial view: `~/Views/MacroPartials/FormHandler.cshtml`
   - Parameters: 
-    - Title: `Inherit From` Alias: `InheritFrom` Type: `Textarea`
+    1. Title: `Inherit From` Alias: `InheritFrom` Type: `Textarea`
 - Form Email Master
+  - Macro partial view: `~/Views/MacroPartials/FormEmailMaster.cshtml`
 - Contact Form
+  - Macro partial view: `~/Views/MacroPartials/ContactForm.cshtml`
 - Contact Email Template
+  - Macro partial view: `~/Views/MacroPartials/ContactEmailTemplate.cshtml`
 - Contact User Email Template
+  - Macro partial view: `~/Views/MacroPartials/ContactUserEmailTemplate.cshtml`
 
-## Macro Partial Views
-
-- /Views/MacroPartials/FormHandler.cshtml
-- /Views/MacroPartials/FormEmailMaster.cshtml
-- /Views/MacroPartials/ContactForm.cshtml
-- /Views/MacroPartials/ContactEmailTemplate.cshtml
-- /Views/MacroPartials/ContactUserEmailTemplate.cshtml
 
 ## Stylesheets
 

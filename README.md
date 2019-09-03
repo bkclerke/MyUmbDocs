@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Home
-nav_order: 1
+title: Read me
+nav_exclude: true
 ---
 
 # ReadME

@@ -43,9 +43,11 @@ The Form Settings Document Type (aka doctype) is setup in the Compositions organ
 
 ![Form Settings Doctype](images/v8/form-settings-doctype.png)
 
-**Important Note About Doctype Naming Conventions** The naming convention for composition doctypes are prefixed with "comp" and then the doctype name in a camel casing format. For example, the Form Settings doctype alias is `compFormSettings`. Compositions also use the general settings icon in black for the doctype icon. This practice makes it easy to recognize when selecting doctypes within Umbraco. [Read more about the naming convention used here](/MyUmbDocs/Starterkit-Package/Package-Includes.html#documenttypes).
+**Important Note About Doctype Naming Conventions** 
 
 ![Form Settings Doctype Naming](images/v8/form-settings-doctype-naming.png)
+
+The naming convention for composition doctypes are prefixed with `comp` and then the doctype name in a camel case format. For example, the Form Settings doctype alias is `compFormSettings`. Compositions also use the `icon-settings` in black for the doctype icon. This practice makes it easy to recognize when selecting doctypes within Umbraco. [Read more](/MyUmbDocs/Starterkit-Package/Package-Includes.html#documenttypes)  about the naming convention used in projects here.
 
 **Document Type Properties:**
 

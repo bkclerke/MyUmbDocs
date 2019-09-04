@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Read me
+title: Read Me
 nav_exclude: true
 ---
 

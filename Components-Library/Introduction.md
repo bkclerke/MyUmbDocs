@@ -1,12 +1,12 @@
 ---
 versionFrom: 8
-meta.Title: "Page Components"
+meta.Title: "Components Library"
 meta.Description: "Page Components Explained"
 
 layout: default
-title: Page Components
+title: Components Library
 nav_order: 6
-permalink: /Component-Library
+permalink: /Components-Library
 has_children: true
 ---
 

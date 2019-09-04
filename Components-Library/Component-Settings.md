@@ -1,10 +1,10 @@
 ---
 versionFrom: 8
 meta.Title: "Components Library"
-meta.Description: "Page Components Development Guidelines"
+meta.Description: "Page Components Document Type Composition"
 
 layout: default
-title: Component Settings Document Type
+title: Component Settings
 parent: Components Library
 ---
 

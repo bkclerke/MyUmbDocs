@@ -11,11 +11,11 @@ nav_order: 1
 
 # Development Guidelines
 
-Please read the [Component Library Explained](Component-Library-Explained.md) prior to following the Development Guidelines to get an overview of how the component library is intended to work.
+
 
 ## Document Types
 
-Make sure to add the Document Type Alias for each page that requires the Page Components Folder to the code in the /App_Code/PageComponents.cs file. This will auto generate the Page Components Folder for new pages.
+Make sure to add the Document Type Alias for each page that requires the Page Components Folder to the code in the `~/App_Code/PageComponents.cs` file. This will auto generate the Page Components Folder for new pages.
 
 ## Page Component Permissions
 

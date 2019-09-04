@@ -6,6 +6,7 @@ meta.Description: "Page Components Document Type Composition"
 layout: default
 title: Component Settings
 parent: Components Library
+nav_order: 2
 ---
 
 # Component Settings Document Type Composition

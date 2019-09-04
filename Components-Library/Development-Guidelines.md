@@ -6,6 +6,7 @@ meta.Description: "Page Components Development Guidelines"
 layout: default
 title: Development Guidelines
 parent: Components Library
+nav_order: 1
 ---
 
 # Development Guidelines

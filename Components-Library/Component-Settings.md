@@ -128,7 +128,7 @@ Base code for the component settings are located in the `~/Views/Partials/PageCo
         }
     }
 
-    <div class="pc-my-component-name @componentId @theme @topSpace @btmSpace">
+    <div id="@componentId" class="pc-my-component-name @theme @topSpace @btmSpace">
         <!-- CONTENT GOES HERE -->
     </div>
 }

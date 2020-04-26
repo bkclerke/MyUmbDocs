@@ -17,8 +17,8 @@ Before using the Form Handler macro, you will need to make sure that the content
 
 If the form settings are not available on your doctype, you can apply the Form Settings doctype as a composition by navigating to the doctype in the Settings section, click on the Compositions button, tick the checkbox for Form Settings, click Submit and Save your changes.
 
-![Assign Form Settings Composition](images/v8/form-settings-comp-assign.gif)
+![Assign Form Settings Composition](images/form-settings-comp-assign.gif)
 
 Once you have your form settings composition applied to your doctype you will see the Form Settings area on your content node's Content App.
 
-![Form Settings Content Node](images/v8/form-handler-content-node-settings.png)
+![Form Settings Content Node](images/form-handler-content-node-settings.png)

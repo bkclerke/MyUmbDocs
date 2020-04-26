@@ -13,7 +13,7 @@ parent: Form Handler Package
 
 The Form Handler macro can be used directly on a template by navigating to the template within Umbraco, clicking Insert and selecting the Form Handler macro. 
 
-![Form Handler Macro On Template](images/v8/form-handler-macro-template.gif)
+![Form Handler Macro On Template](images/form-handler-macro-template.gif)
 
 Once you have selected the form handler, the [developer settings](How-It-Works.md#developer-settings-explained) will be available to configure in the dialog window. You must configure these settings in order for the Form Handler to work. Once configured on your template, the form handler macro will appear like this:
 

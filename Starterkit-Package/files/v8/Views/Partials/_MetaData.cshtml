@@ -1,0 +1,98 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@using Newtonsoft.Json
+@using Newtonsoft.Json.Linq
+@using System.Text.RegularExpressions
+@{
+    var home = Model.AncestorOrSelf(1);
+    string title = Model.Value<string>("pageTitleTag") != "" ? Model.Value<string>("pageTitleTag") : Model.Name;
+    string ogTitle = Model.Value<string>("ogTitle") != "" ? Model.Value<string>("ogTitle") : title;
+    string description = Model.Value<string>("metaDescription") != "" ? Model.Value<string>("metaDescription") : home.Value<string>("metaDescription");
+    string siteDomain = String.Format("{0}://{1}", Request.Url.Scheme, Request.Url.Host);
+    string pageUrl = String.Format("{0}{1}", siteDomain, Request.RawUrl.TrimEnd('/'));
+    // CHECK FOR UMBRACO URL ALIAS
+    if (Model.HasProperty("umbracoUrlAlias"))
+    {
+        // USE PAGE URL INSTEAD OF RAW URL IF URL ALIAS HAS VALUE
+        if (Model.HasValue("umbracoUrlAlias"))
+        {
+            pageUrl = String.Format("{0}{1}", siteDomain, @Model.Url.ToString().TrimEnd('/'));
+        }
+    }
+    // CHECK FOR CANONICAL TAG OVERRIDE AND SET AS PAGE URL
+    if (Model.HasValue("canonicalTag"))
+    {
+        pageUrl = Model.Value<string>("canonicalTag");
+    }
+    string imgUrl = string.Empty;
+    if (home.HasValue("ogImage") || Model.HasValue("ogImage"))
+    {
+        var imgSrc = Model.HasValue("ogImage") ? Model : home;
+        imgUrl = String.Format("{0}{1}", siteDomain, Url.GetCropUrl(imgSrc, "ogImage", "og").ToString());
+    }
+    string twitter = home.HasValue("twitterHandle") ? "@" + home.Value("twitterHandle").ToString() : string.Empty;
+    string schemaType = home.HasValue("schemaMarkupType") ? home.Value("schemaMarkupType").ToString().Replace(" ", "") : string.Empty;
+    string businessName = home.HasValue("businessName") ? home.Value("businessName").ToString() : string.Empty;
+    string businessPhone = home.HasValue("businessPhone") ? Regex.Replace(home.Value("businessPhone").ToString(), "[^0-9]", "") : string.Empty;
+    var businessAddress = Model.Value<IEnumerable<IPublishedElement>>("businessAddress");
+
+    <title>@title @CheckPaginationSEO()</title>
+    <meta name="description" content="@description @CheckPaginationSEO()" />
+    if (Model.Value<bool>("noIndex"))
+    {
+        <meta name="robots" content="noindex, nofollow">
+    }
+    <!-- BING --><meta http-equiv="content-language" content="en-us">
+    <link rel="canonical" href="@pageUrl" hreflang="en-us" />
+
+    <!--OPEN GRAPH-->
+    <meta property="og:url" content="@pageUrl" />
+    <meta property="og:title" content="@ogTitle" />
+    <meta property="og:description" content="@description @CheckPaginationSEO()" />
+    if (!string.IsNullOrEmpty(imgUrl))
+    {
+        <meta property="og:image" content="@imgUrl" />
+    }
+    <meta property="og:type" content="website" />
+    if (!string.IsNullOrEmpty(twitter))
+    {
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@twitter" />
+        <meta name="twitter:creator" content="@twitter" />
+    }
+    <!--SCHEMA-->
+    <script type="application/ld+json">
+        {
+        "@@context": "http://schema.org",
+        "@@type": "@schemaType",
+        @if (businessAddress != null)
+        {
+            foreach (var address in businessAddress)
+            {
+                <text>
+                    "address": {
+                    "@@type": "PostalAddress",
+                    "addressLocality": "@address.Value("city")",
+                    "addressRegion": "@address.Value("state")",
+                    "streetAddress": "@address.Value("streetAddress") @address.Value("streetAddress2")",
+                    "postalCode": "@address.Value("zip")"
+                    },
+                </text>
+            }
+        }
+        "description": "@home.Value("metaDescription")",
+        "name": "@businessName",
+        "telephone": "@businessPhone"
+        }
+    </script>
+}
+
+@functions {
+
+    public string CheckPaginationSEO()
+    {
+        var uriBuilder = new UriBuilder(Request.Url.ToString());
+        var query = HttpUtility.ParseQueryString(uriBuilder.Query);
+
+        return string.IsNullOrWhiteSpace(query["p"]) ? string.Empty : " Page " + query["p"];
+    }
+}

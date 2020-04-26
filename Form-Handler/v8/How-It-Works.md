@@ -45,7 +45,7 @@ Macro parameters for the form handler must be setup by a developer. These are th
 
 The Form Settings Document Type (aka doctype) is setup in the Compositions organizational folder. This doctype acts as composition for various nodes that require form settings. Using this method insures that all doctypes that need the form settings will have the same settings applied. [Read more](/MyUmbDocs/Starterkit-Package/Package-Includes.html#important-document-type-naming-conventions) about document type setup and naming conventions used in the starterkit here.
 
-![Form Settings Doctype](images/v8/form-settings-doctype.png)
+![Form Settings Doctype](images/form-settings-doctype.png)
 
 ### Document Type Properties
 
@@ -61,7 +61,7 @@ The Form Settings Document Type (aka doctype) is setup in the Compositions organ
 
 These settings are configured by a developer every time the form handler is needed. These are the basic settings telling the form handler where to get the content editor form settings (if applicable), the form name, form class for styling purposes, handle server side validation with required fields and setup the user email that is received by the person who fills out the form on the front end of the website.
 
-![Form Handler Macro Parameters](images/v8/form-handler-macro-parameters.png)
+![Form Handler Macro Parameters](images/form-handler-macro-parameters.png)
 
 ### Form Handler Macro Parameters
 

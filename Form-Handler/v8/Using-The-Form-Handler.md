@@ -42,7 +42,7 @@ For your new form, you will find it easiest to setup the form files within the U
 
 Navigate to the Settings section, right click on the Partial View Macro Files under the Templating section and click Create. Select New Partial View Macro. Give your macro a name and Save the new file. You will need to do this 3 times for your new form following the naming conventions specified in the [setup a new form](#setup-a-new-form) section.
 
-![Create Macro Partial View](images/v8/create-macro-partial-view.gif)
+![Create Macro Partial View](images/create-macro-partial-view.gif)
 
 ### Configure Your Form
 
@@ -52,24 +52,24 @@ In order to pass your form data to through the form handler and to the email tem
 
 ### Configure Email Template
 
-The Contact Form Email Template is plain html markup that is rendered within the `{INNER_CONTENT}` area of the <a href="https://github.com/bkclerke/MyUmbDocs/blob/master/Form-Handler/files/Views/MacroPartials/FormEmailMaster.cshtml" target="_blank">Form Email Master</a> Macro Partial View file. The markup you insert here will need to be compatible with email clients. In order to pass your form inputs into your template you will need to denote your form field values by inserting the field name inside of curly brackes. For example, if your field name on your form is `name="Email"` then your email template will need to say `{Email}` to insert that value. This is case sensitive and must match your form `name=""` attribute.
+The Contact Form Email Template is plain html markup that is rendered within the `{INNER_CONTENT}` area of the <a href="https://github.com/bkclerke/MyUmbDocs/blob/master/Form-Handler/v8/files/Views/MacroPartials/FormEmailMaster.cshtml" target="_blank">Form Email Master</a> Macro Partial View file. The markup you insert here will need to be compatible with email clients. In order to pass your form inputs into your template you will need to denote your form field values by inserting the field name inside of curly brackes. For example, if your field name on your form is `name="Email"` then your email template will need to say `{Email}` to insert that value. This is case sensitive and must match your form `name=""` attribute.
 
 This email is what is sent to the email recipients configured on the form settings.
 
-<a href="https://github.com/bkclerke/MyUmbDocs/blob/master/Form-Handler/files/Views/MacroPartials/ContactFormEmailTemplate.cshtml" target="_blank" class="btn btn-purple">View Email Template Example</a>
+<a href="https://github.com/bkclerke/MyUmbDocs/blob/master/Form-Handler/v8/files/Views/MacroPartials/ContactFormEmailTemplate.cshtml" target="_blank" class="btn btn-purple">View Email Template Example</a>
 
 Here is what the pre-configured contact email template looks like that is received by the recipients.
 
-![Contact Form Email Template](images/v8/contact-form-email.png)
+![Contact Form Email Template](images/contact-form-email.png)
 
 ### Configure User Email Template
 
-The Contact Form User Email Template is plain html markup that is rendered within the `{INNER_CONTENT}` area of the <a href="https://github.com/bkclerke/MyUmbDocs/blob/master/Form-Handler/files/Views/MacroPartials/FormEmailMaster.cshtml" target="_blank">Form Email Master</a> Macro Partial View file. The markup you insert here will need to be compatible with email clients. In order to pass your form inputs into your template you will need to denote your form field values by inserting the field name inside of curly brackes. For example, if your field name on your form is `name="Name"` then your email template will need to say `{Name}` to insert that value. This is case sensitive and must match your form `name=""` attribute.
+The Contact Form User Email Template is plain html markup that is rendered within the `{INNER_CONTENT}` area of the <a href="https://github.com/bkclerke/MyUmbDocs/blob/master/Form-Handler/v8/files/Views/MacroPartials/FormEmailMaster.cshtml" target="_blank">Form Email Master</a> Macro Partial View file. The markup you insert here will need to be compatible with email clients. In order to pass your form inputs into your template you will need to denote your form field values by inserting the field name inside of curly brackes. For example, if your field name on your form is `name="Name"` then your email template will need to say `{Name}` to insert that value. This is case sensitive and must match your form `name=""` attribute.
 
 This email is what is sent to your user who fills out your form when an email address is provided.
 
-<a href="https://github.com/bkclerke/MyUmbDocs/blob/master/Form-Handler/files/Views/MacroPartials/ContactFormUserEmailTemplate.cshtml" target="_blank" class="btn btn-purple">View User Email Template Example</a>
+<a href="https://github.com/bkclerke/MyUmbDocs/blob/master/Form-Handler/v8/files/Views/MacroPartials/ContactFormUserEmailTemplate.cshtml" target="_blank" class="btn btn-purple">View User Email Template Example</a>
 
 Here is what the pre-configured contact user email template looks like that is received by the user filling out the form.
 
-![Contact Form Email Template](images/v8/contact-form-user-email.png)
+![Contact Form Email Template](images/contact-form-user-email.png)

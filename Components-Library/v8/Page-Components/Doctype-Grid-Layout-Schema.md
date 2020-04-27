@@ -5,10 +5,8 @@ meta.Description: "Page Components Document Type Composition"
 
 layout: default
 title: Grid Layout Document Type
-parent: Components Library
+parent: Page Components
 grand_parent: Components Library
-nav_order: 3
-nav_exclude: true
 
 doctype: Grid Layout
 ---

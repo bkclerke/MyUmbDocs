@@ -6,6 +6,7 @@ meta.Description: "Page Components Explained"
 layout: default
 title: Page Components
 parent: Components Library
+nav_order: 3
 has_children: true
 ---
 

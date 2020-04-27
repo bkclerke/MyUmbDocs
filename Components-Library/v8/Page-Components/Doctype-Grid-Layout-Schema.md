@@ -30,14 +30,21 @@ The {{ page.doctype }} Document Type is used for general content entry in the we
 
 **Content Tab Properties:**
 
-| Title | Alias | Property Type |
-|-------|-------|---------------|
-| Grid | grid | Grid Layout |
+| Title | Alias | Property Editor | Property Editor Alias |
+|-------|-------|---------------|-------------|
+| Grid | grid | Grid layout | Umbraco.Grid |
 
 ## Data Type References
 
-The Grid Layout property type used for the grid property is configured based off of the initial design evaluation with different row configurations as needed.
+The Grid layout property editor used for the Grid property is configured based off of the initial design evaluation with different row configurations as needed.
+
+To learn about configuring the grid layout data type built in umbraco, [refer to the docs here](https://our.umbraco.com/documentation/getting-started/backoffice/property-editors/built-in-property-editors/grid-layout/Configuring-The-Grid-Layout-Datatype).
 
 ## Page Component Code
 
-The grid layout component is used for the basic setup and composition for most page components. The settings required are the Component Settings. You can find the code in the [_PC_GridLayout.cshtml](https://github.com/bkclerke/MyUmbDocs/blob/master/Components-Library/v8/files/Views/Partials/PageComponents/_PC_GridLayout.cshtml) file.
+**File location:** `~/Views/Partials/PageComponents/_PC_GridLayout.cshtml`
+
+[View code file on GitHub](https://github.com/bkclerke/MyUmbDocs/blob/master/Components-Library/v8/files/Views/Partials/PageComponents/_PC_GridLayout.cshtml){: .btn .btn-purple }
+
+**Details:**
+In most cases, the Grid Layout page component has only the basic customization settings that all page components utilize. This component is used to define the base functionality for the [DocType Composition Component Settings](/Starterkit-Package/Doctype-Comp-Settings-Schema.md).

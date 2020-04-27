@@ -1,7 +1,8 @@
 ﻿@inherits UmbracoViewPage<PcGridLayout>
 @{
     // SETUP COMPONENT ID
-    string componentId = "pc-grid-layout-" + Model.Id;
+    string componentName = "pc-grid-layout";
+    string componentId = componentName + "-" + Model.Id;
 
     // -----------------------------
     // COMPONENT SETTINGS
@@ -87,7 +88,7 @@
         }
     }
 
-    <div id="@componentId" class="pc-grid-layout @themeClass @areaBgColor @topSpace @btmSpace">
+    <div id="@componentId" class="@componentName @themeClass @areaBgColor @topSpace @btmSpace">
         @Html.GetGridHtml(Model, "grid", "Bootstrap3")
     </div>
 }

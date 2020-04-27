@@ -40,17 +40,20 @@ Partial view files for page components are in the Umbraco Settings Section in th
 To improve editor experience, make page components stand out in the content tree by using a different color icon. For example, our default page component setup uses the color orange for page components and a different color for all other page types.
 
 **List View**
+
 The List View tab can be configured based on each components needs. 
 
 **Permissions**
+
 Permissions are customized based on each component needs.
 
 **Templates**
+
 Page Components utilize the Parent Redirect template included in the Starterkit. This ensures that in the case a component page is landed on, it will redirect to the actual page that utilizes the content.
 
 ## Page Component Code File Conventions
 
-You will notice that the current library of page components sticks to a similar setup for the code file. 
+You will notice that the current library of page components sticks to a similar setup for the code file. This setup requires that your new page component utilizes the [component settings](/Starterkit-Package/Doctype-Comp-Settings-Schema.mdStarterkit/) document type schema as a composition. These are the properties we are writing code for initially in our file. If you do not utilize this and your page component is completely custom, disregard the code listed specifically but keep in mind that this convention may be helpful for your developers to setup styles for this page component.
 
 ### Step 1: Component ID
 
@@ -202,13 +205,13 @@ For example if you have multiple child items of a specific type that you need to
 
 It is time to setup your markup for your custom page component. Inside of the main component `div` tag is where you begin building your new page component.
 
-The [grid layout](Page-Components/Doctype-Grid-Layout-Schema.md) utilzes the most basic setup with the [component settings](/Starterkit-Package/Doctype-Comp-Settings-Schema.md) composition and rendering of the grid layout data type. That is why we use this component for the start of our new page component files as it includes only the basic features utilized across most components. In the new files, we remove the `GetGridHtml` method since this is specific to the grid layout component, but we leave the outter div. The outter div is what we need to wrap our new page component in.
-
 ```
 <div id="@componentId" class="pc-grid-layout @theme @topSpace @btmSpace">
-    @Html.GetGridHtml(Model, "grid", "Bootstrap3")
+    ...
 </div>
 ```
+
+***Tip:** The [grid layout](Page-Components/Doctype-Grid-Layout-Schema.md) utilzes the most basic setup with the [component settings](/Starterkit-Package/Doctype-Comp-Settings-Schema.md) composition. To save time setting up new page component files, we use the gird layout code file to start our new page component files. In the new files, we remove the `GetGridHtml` method since this is specific to the grid layout component, but we leave the outter div. The outter div is what we need to wrap our new page component in.*
 
 When rendered on the website you would see a div with a unique ID and multiple classes including the base component name class (for general styling purposes), the theme (light or dark) and the top and bottom spacing.
 

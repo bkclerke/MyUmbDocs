@@ -40,4 +40,4 @@ The Grid Layout property type used for the grid property is configured based off
 
 ## Page Component Code
 
-The grid layout component is used for the basic setup and composition for most page components. The settings required are the Component Settings. You can find the code in the [_PC_GridLayout.cshtml](/Components-Library/v8/files/Views/Partials/PageComponents/_PC_GridLayout.cshtml) file.
+The grid layout component is used for the basic setup and composition for most page components. The settings required are the Component Settings. You can find the code in the [_PC_GridLayout.cshtml](#) file.

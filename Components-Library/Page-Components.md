@@ -7,7 +7,6 @@ layout: default
 title: Page Components
 parent: Components Library
 nav_order: 3
-has_children: true
 ---
 
 # Page Components

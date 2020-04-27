@@ -7,6 +7,7 @@ layout: default
 title: Grid Layout Document Type
 parent: Page Components
 grand_parent: Components Library
+nav_exclude: true
 
 doctype: Grid Layout
 ---

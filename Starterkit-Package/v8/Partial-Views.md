@@ -22,9 +22,7 @@ packageVersion: 2
 
 ## Meta Data
 
-**Located in:** 
-
-`~/Views/Partials/_MetaData.cshtml`
+**Located in:** `~/Views/Partials/_MetaData.cshtml`
 
 [View on Github](https://github.com/bkclerke/MyUmbDocs/blob/master/Starterkit-Package/v8/files/Views/Partials/_MetaData.cshtml){: .btn .btn-purple }
 

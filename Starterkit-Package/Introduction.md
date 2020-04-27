@@ -18,12 +18,14 @@ packageVersion: 2
 
 This package setup begins after the [Site Setup Checklist](/MyUmbDocs/site-setup/Site-Setup-Checklist.html#site-setup-checklist) has been completed.
 
-Looking for what the [starterkit package includes](Package-Includes.md)?
+## Package Includes
 
-## Setup Instructions
+A full list of the Umbraco v8 Starterkit Package contents can be found on the [package includes](Package-Includes.md) page.
+
+## v{{ page.versionFrom }} Setup Instructions
 
 1. Install the DT Starterkit package via the Install Local option the Umbraco Packages section.
-   - ![Install Local Package](images/v8/umbraco-packages-install-screen.png)
+   - ![Install Local Package](v8/images/umbraco-packages-install-screen.png)
 2. Configure the following Data Types
    - Richtext editor
      - Adjust toolbar options as needed
@@ -34,6 +36,6 @@ Looking for what the [starterkit package includes](Package-Includes.md)?
      - Assign user stylesheet
      - Turn off image resizing by setting 'Maximium size for inserted images' to 0 Pixels.
 3. Adjust template inheritance in settings section - This is because the files come into umbraco with the proper code but the tree structure doesnt appear to register that some templates are using the Master template for the master. 
-   - ![Set template master template](images/v8/page-set-master-temp.png)
+   - ![Set template master template](v8/images/page-set-master-temp.png)
 
 The rest of the starterkit setup starts with customzing your page components based off your design evaluation. 

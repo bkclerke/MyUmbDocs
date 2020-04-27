@@ -53,7 +53,7 @@ Page Components utilize the Parent Redirect template included in the Starterkit.
 
 ## Page Component Code File Conventions
 
-You will notice that the current library of page components sticks to a similar setup for the code file. This setup requires that your new page component utilizes the [component settings](/Starterkit-Package/Doctype-Comp-Settings-Schema.mdStarterkit/) document type schema as a composition. These are the properties we are writing code for initially in our file. If you do not utilize this and your page component is completely custom, disregard the code listed specifically but keep in mind that this convention may be helpful for your developers to setup styles for this page component.
+You will notice that the current library of page components sticks to a similar setup for the code file. This setup requires that your new page component utilizes the [component settings](/Starterkit-Package/Doctype-Comp-Settings-Schema.md) document type schema as a composition. These are the properties we are writing code for initially in our file. If you do not utilize this and your page component is completely custom, disregard the code listed specifically but keep in mind that this convention may be helpful for your developers to setup styles for this page component.
 
 ### Step 1: Component ID
 

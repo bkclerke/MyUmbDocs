@@ -1,0 +1,111 @@
+﻿@inherits UmbracoViewPage<PcGridLayout>
+@{
+    // SETUP COMPONENT ID
+    string componentId = "pc-grid-layout-" + Model.Id;
+
+    // --------------------------------
+    // COMPONENTS SETTINGS COMPOSITION
+    // --------------------------------
+
+    // COMPONENT SPACING
+    string topSpace = !string.IsNullOrEmpty(Model.Value<string>("areaTopSpace")) ? Model.Value<string>("areaTopSpace") : string.Empty;
+    if (!string.IsNullOrEmpty(topSpace))
+    {
+        switch (topSpace)
+        {
+            case "Small":
+                topSpace = "pt-sm";
+                break;
+            case "Medium":
+                topSpace = "pt-md";
+                break;
+            case "Large":
+                topSpace = "pt-lg";
+                break;
+            default:
+                topSpace = string.Empty;
+                break;
+        }
+    }
+    string btmSpace = !string.IsNullOrEmpty(Model.Value<string>("areaBottomSpace")) ? Model.Value<string>("areaBottomSpace") : string.Empty;
+    if (!string.IsNullOrEmpty(btmSpace))
+    {
+        switch (btmSpace)
+        {
+            case "Small":
+                btmSpace = "pb-sm";
+                break;
+            case "Medium":
+                btmSpace = "pb-md";
+                break;
+            case "Large":
+                btmSpace = "pb-lg";
+                break;
+            default:
+                btmSpace = string.Empty;
+                break;
+        }
+    }
+
+    // --------------------------------
+    // BG WITH BREAKPOINTS COMPOSITION
+    // --------------------------------
+
+    string themeClass = Model.Value<bool>("lightTheme") ? "theme-light" : "theme-dark";
+    string areaBgColor = string.Empty;
+    bool hasAreaBgImage = Model.HasValue("areaBgImage");
+    string areaBgRepeat = !string.IsNullOrEmpty(Model.Value<string>("areaBgRepeat")) ? Model.Value<string>("areaBgRepeat").ToLower() : "no-repeat";
+    string areaBgSize = !string.IsNullOrEmpty(Model.Value<string>("areaBgSize")) ? Model.Value<string>("areaBgSize").ToLower() : "cover";
+
+    if (!hasAreaBgImage)
+    {
+        // SET BACKGROUND COLOR IF NO BACKGROUND IMAGE
+        areaBgColor = Model.HasValue("areaBgColor") ? Model.Value<string>("areaBgColor") : string.Empty;
+        switch (areaBgColor)
+        {
+            // CONFIGURE APPROVED COLOR PICKER AND SET THEME CLASS
+            default:
+                break;
+        }
+    }
+    else if (hasAreaBgImage)
+    {
+        // SETUP STYLES FOR IMAGE BACKGROUND
+        <text>
+            <style>
+            #@(componentId) {
+                background-size: @areaBgSize;
+                background-repeat: @areaBgRepeat;
+            }
+            @@media (min-width: 1201px) {
+                #@(componentId) {
+                    background-image: url("@(Url.GetCropUrl(Model, "areaBgImage", "xl"))");
+                    background-position: @(!string.IsNullOrEmpty(Model.Value<string>("areaBgImgPosXl")) ? Model.Value<string>("areaBgImgPosXl").ToLower() : "center center");                        
+                }
+            }
+            @@media (max-width: 1200px) {
+                #@(componentId) {
+                    background-image: url("@(Url.GetCropUrl(Model, "areaBgImage", "lg"))");
+                    background-position: @(!string.IsNullOrEmpty(Model.Value<string>("areaBgImgPosLg")) ? Model.Value<string>("areaBgImgPosLg").ToLower() : "center center");                            
+                }
+            }
+            @@media (max-width: 992px) {
+                #@(componentId) {
+                    background-image: url("@(Url.GetCropUrl(Model, "areaBgImage", "md"))");
+                    background-position: @(!string.IsNullOrEmpty(Model.Value<string>("areaBgImgPosMd")) ? Model.Value<string>("areaBgImgPosMd").ToLower() : "center center");                            
+                }
+            }
+            @@media (max-width: 768px) {
+                #@(componentId) {
+                    background-image: url("@(Url.GetCropUrl(Model, "areaBgImage", "sm"))");
+                    background-position: @(!string.IsNullOrEmpty(Model.Value<string>("areaBgImgPosSm")) ? Model.Value<string>("areaBgImgPosSm").ToLower() : "center center");                            
+                }
+            }
+            </style>
+        </text>
+    }
+
+    <div id="@componentId" class="pc-grid-layout @themeClass @areaBgColor @topSpace @btmSpace">
+        @Html.GetGridHtml(Model, "bodyText", "Bootstrap3")
+    </div>
+}

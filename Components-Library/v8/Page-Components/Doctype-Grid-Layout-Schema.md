@@ -47,4 +47,4 @@ To learn about configuring the grid layout data type built in umbraco, [refer to
 [View code file on GitHub](https://github.com/bkclerke/MyUmbDocs/blob/master/Components-Library/v8/files/Views/Partials/PageComponents/_PC_GridLayout.cshtml){: .btn .btn-purple }
 
 **Details:**
-In most cases, the Grid Layout page component has only the basic customization settings that all page components utilize. This component is used to define the base functionality for the [DocType Composition Component Settings](/Starterkit-Package/Doctype-Comp-Settings-Schema.md).
+In most cases, the Grid Layout page component has only the basic customization settings that all page components utilize. This component is used to define the base functionality for the [DocType Composition Component Settings](/MyUmbDocs/Starterkit-Package/v8/doctypes/Doctype-Comp-Settings-Schema.md).

@@ -53,7 +53,7 @@ Page Components utilize the Parent Redirect template included in the Starterkit.
 
 ## Page Component Code File Conventions
 
-You will notice that the current library of page components sticks to a similar setup for the code file. This setup requires that your new page component utilizes the [component settings](/Starterkit-Package/Doctype-Comp-Settings-Schema.md) document type schema as a composition. These are the properties we are writing code for initially in our file. If you do not utilize this and your page component is completely custom, disregard the code listed specifically but keep in mind that this convention may be helpful for your developers to setup styles for this page component.
+You will notice that the current library of page components sticks to a similar setup for the code file. This setup requires that your new page component utilizes the [component settings](/MyUmbDocs/Starterkit-Package/Doctype-Comp-Settings-Schema.md) document type schema as a composition. These are the properties we are writing code for initially in our file. If you do not utilize this and your page component is completely custom, disregard the code listed specifically but keep in mind that this convention may be helpful for your developers to setup styles for this page component.
 
 ### Step 1: Component ID
 
@@ -71,7 +71,7 @@ The `componentName` is the base component name css class utilized in the css to 
 
 ### Step 2: Component Background Settings
 
-The next area sets up the component background settings and color theme. These are the base settings setup in the [DocType Composition Component Settings](/Starterkit-Package/Doctype-Comp-Settings-Schema.md). 
+The next area sets up the component background settings and color theme. These are the base settings setup in the [DocType Composition Component Settings](/MyUmbDocs/Starterkit-Package/Doctype-Comp-Settings-Schema.md). 
 
 Typically the page components allow for a custom background image, thus setting up the css for the `background-image`, `background-size`, `background-position`, and `background-repeat` values.
 

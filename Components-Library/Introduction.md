@@ -12,7 +12,7 @@ has_children: true
 
 # Component Library Explained
 
-The component library is a library of components that are derived from the website design evaluation. Every page component is different. Most page components have a standard composition applied to inherit [Component Settings](v8/Component-Settings.md) however most are configured based on a standard setup against these [Development Guidelines](v8/Development-Guidelines.md).
+The component library is a library of components that are derived from the website design evaluation. Every page component is different. Most page components have a standard composition applied that inherits from the [Component Settings](v8/Component-Settings.md) document type. Page Components are configured based on these [Development Guidelines](v8/Development-Guidelines.md).
 
 ## How It Works
 

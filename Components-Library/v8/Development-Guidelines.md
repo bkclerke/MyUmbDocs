@@ -40,10 +40,13 @@ Partial view files for page components are in the Umbraco Settings Section in th
 To improve editor experience, make page components stand out in the content tree by using a different color icon. For example, our default page component setup uses the color orange for page components and a different color for all other page types.
 
 **List View**
+
 The List View tab can be configured based on each components needs. 
 
 **Permissions**
+
 Permissions are customized based on each component needs.
 
 **Templates**
+
 Page Components utilize the Parent Redirect template included in the Starterkit. This ensures that in the case a component page is landed on, it will redirect to the actual page that utilizes the content. 

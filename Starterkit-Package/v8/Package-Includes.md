@@ -44,7 +44,7 @@ The below templates are included in the DT Starterkit Package. The list below re
 - `~/Views/Partials/_PC_Switch.cshtml`
 - `~/Views/Partials/PageComponents/_PC_GridLayout.cshtml`
 
-[Partial View Files Explained](Partial-Views.html){: .btn .btn-purple}
+[Partial View Files Explained](Partial-Views.md){: .btn .btn-purple}
 
 ## Macros
 
@@ -86,24 +86,24 @@ The scripts folder contains various scripts related to the indiviual project. Th
 
 ## DocumentTypes
 
-- [Home](doctypes/Doctype-Home-Schema.html)
-- [Article Page](doctypes/Doctype-Article-Page-Schema.html)
-- [Components Page](doctypes/Doctype-Comp-Page-Schema.html)
-- [Page Components Folder](doctypes/Doctype-Page-Comp-Folder-Schema.html)
+- [Home](doctypes/Doctype-Home-Schema.md)
+- [Article Page](doctypes/Doctype-Article-Page-Schema.md)
+- [Components Page](doctypes/Doctype-Comp-Page-Schema.md)
+- [Page Components Folder](doctypes/Doctype-Page-Comp-Folder-Schema.md)
 - Page Components [Organizational Folder]
-  - [Grid Layout](doctypes/Doctype-Grid-Layout-Schema.html)
+  - [Grid Layout](doctypes/Doctype-Grid-Layout-Schema.md)
 - Compositions [Organizational Folder]
-  - [Form Settings](doctypes/Doctype-Form-Settings-Schema.html)
-  - [Page Settings](doctypes/Doctype-Page-Settings-Schema.html)
-  - [SEO](doctypes/Doctype-SEO-Schema.html)
-  - [Component Settings](doctypes/Doctype-Comp-Settings-Schema.html)
+  - [Form Settings](doctypes/Doctype-Form-Settings-Schema.md)
+  - [Page Settings](doctypes/Doctype-Page-Settings-Schema.md)
+  - [SEO](doctypes/Doctype-SEO-Schema.md)
+  - [Component Settings](doctypes/Doctype-Comp-Settings-Schema.md)
 - Content Only [Organizational Folder]
-  - [Global Settings](doctypes/Doctype-Global-Settings-Schema.html)
-  - [Nested Address](doctypes/Doctype-Nested-Address-Schema.html)
+  - [Global Settings](doctypes/Doctype-Global-Settings-Schema.md)
+  - [Nested Address](doctypes/Doctype-Nested-Address-Schema.md)
 
 There are important practices to follow to keep your site organized and easy for editors to use when setting up your Umbraco website. **Please read the doctype setup instructions and important notes about doctype naming conventions.**
 
-[Doctype Setup Instructions](Document-Types.html){: .btn .btn-purple}
+[Doctype Setup Instructions](Document-Types.md){: .btn .btn-purple}
 
 ## DataTypes
 

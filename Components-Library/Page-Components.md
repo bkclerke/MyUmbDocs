@@ -13,7 +13,7 @@ nav_order: 3
 
 There are some standard page components setup in the page component library including the following:
 
-* [Grid Layout](v8/Page-Components/Doctype-Grid-Layout-Schema.html)
+* [Grid Layout](Components-Library/v8/Page-Components/Doctype-Grid-Layout-Schema.html)
 * Text with Image Section
   * Text with Image
 * Banner Section

@@ -14,7 +14,7 @@ doctype: Nested Address
 
 # {{ page.doctype }} Document Type Schema
 
-The {{ page.doctype }} Document Type is setup to be used for Content only. The node is configured to be used with Nested Content as the address property for the [Home Document Type](Doctype-Home-Schema.html).
+The {{ page.doctype }} Document Type is setup to be used for Content only. The node is configured to be used with Nested Content as the address property for the [Home Document Type](Doctype-Home-Schema.md).
 
 <dl>
     <dt>Tree Structure</dt> <dd>Document Types > Content Only > {{ page.doctype }}</dd>

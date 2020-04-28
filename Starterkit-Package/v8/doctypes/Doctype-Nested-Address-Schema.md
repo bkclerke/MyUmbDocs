@@ -5,8 +5,8 @@ meta.Description: "DT Starterkit Package Includes"
 
 layout: default
 title: Nested Address Document Type
-parent: Package Includes
-grand_parent: Starterkit Package
+parent: Document Types
+grand_parent: Package Includes
 nav_exclude: true
 
 doctype: Nested Address
@@ -14,7 +14,7 @@ doctype: Nested Address
 
 # {{ page.doctype }} Document Type Schema
 
-The {{ page.doctype }} Document Type is setup to be used for Content only. The node is configured to be used with Nested Content as the address property for the [Home Document Type](#).
+The {{ page.doctype }} Document Type is setup to be used for Content only. The node is configured to be used with Nested Content as the address property for the [Home Document Type](Doctype-Home-Schema.html).
 
 <dl>
     <dt>Tree Structure</dt> <dd>Document Types > Content Only > {{ page.doctype }}</dd>

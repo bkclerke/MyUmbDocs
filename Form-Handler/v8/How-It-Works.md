@@ -43,7 +43,7 @@ Macro parameters for the form handler must be setup by a developer. These are th
 
 ## Form Settings Explained
 
-The Form Settings Document Type (aka doctype) is setup in the Compositions organizational folder. This doctype acts as composition for various nodes that require form settings. Using this method insures that all doctypes that need the form settings will have the same settings applied. [Read more](../../Starterkit-Package/v8/Package-Includes.html#important-document-type-naming-conventions) about document type setup and naming conventions used in the starterkit here.
+The Form Settings Document Type (aka doctype) is setup in the Compositions organizational folder. This doctype acts as composition for various nodes that require form settings. Using this method insures that all doctypes that need the form settings will have the same settings applied. [Read more](../../Starterkit-Package/v8/Document-Types.html#important-document-type-naming-conventions) about document type setup and naming conventions used in the starterkit here.
 
 ![Form Settings Doctype](images/form-settings-doctype.png)
 

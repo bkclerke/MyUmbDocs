@@ -5,8 +5,8 @@ meta.Description: "DT Starterkit Package Includes"
 
 layout: default
 title: Page Components Folder Document Type
-parent: Package Includes
-grand_parent: Starterkit Package
+parent: Document Types
+grand_parent: Package Includes
 nav_exclude: true
 
 doctype: Page Components Folder

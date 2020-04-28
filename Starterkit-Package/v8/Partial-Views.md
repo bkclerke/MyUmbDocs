@@ -4,7 +4,7 @@ meta.Title: "DT Starterkit Package"
 meta.Description: "DT Starterkit Partial Views"
 
 layout: default
-title: Starterkit Partial Views
+title: Partial Views
 parent: Package Includes
 grand_parent: Starterkit Package
 ---

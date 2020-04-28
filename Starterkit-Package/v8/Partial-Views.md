@@ -7,8 +7,6 @@ layout: default
 title: Starterkit Partial Views
 parent: Package Includes
 grand_parent: Starterkit Package
-
-packageVersion: 2
 ---
 
 # Starterkit Partial Views
@@ -27,4 +25,4 @@ packageVersion: 2
 [View on Github](https://github.com/bkclerke/MyUmbDocs/blob/master/Starterkit-Package/v8/files/Views/Partials/_MetaData.cshtml){: .btn .btn-purple }
 
 **What this does:**
-...
+

@@ -43,7 +43,7 @@ Macro parameters for the form handler must be setup by a developer. These are th
 
 ## Form Settings Explained
 
-The Form Settings Document Type (aka doctype) is setup in the Compositions organizational folder. This doctype acts as composition for various nodes that require form settings. Using this method insures that all doctypes that need the form settings will have the same settings applied. [Read more](/MyUmbDocs/Starterkit-Package/Package-Includes.html#important-document-type-naming-conventions) about document type setup and naming conventions used in the starterkit here.
+The Form Settings Document Type (aka doctype) is setup in the Compositions organizational folder. This doctype acts as composition for various nodes that require form settings. Using this method insures that all doctypes that need the form settings will have the same settings applied. [Read more](../../Starterkit-Package/v8/Package-Includes.html#important-document-type-naming-conventions) about document type setup and naming conventions used in the starterkit here.
 
 ![Form Settings Doctype](images/form-settings-doctype.png)
 
@@ -68,7 +68,7 @@ These settings are configured by a developer every time the form handler is need
 | Title | Alias | Property Type | Description |
 |-------|-------|---------------|-------------|
 | Inherit From | InheritFrom | Content Picker | Defaults to the current page for form settings unless otherwise specified. Typical uses include overriding form settings on a particular page to use universal form settings or form settings from another page. |
-| Form Name | FormName | textBox | Required field. This must match the macro naming conventions noted in [setting up a new form](Using-The-Form-Handler.md#setup-a-new-form). |
+| Form Name | FormName | textBox | Required field. This must match the macro naming conventions noted in [setting up a new form](Using-The-Form-Handler.html#setup-a-new-form). |
 | Form Class | FormClass | textBox | Optional field to add a class to the form if needed for styling purposes. |
 | Required Fields | RequiredFields | textBox | CSV formatting for names of required fields on the form. |
 | Send User Email | SendUserEmail | trueFalse | if true, the form handler will attempt to send the user a confirmation email upon successful form submission. |

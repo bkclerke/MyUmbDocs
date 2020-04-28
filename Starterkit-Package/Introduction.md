@@ -16,11 +16,11 @@ packageVersion: 2
 
 *Version {{ page.packageVersion }} Compatible with Umbraco {{ page.versionFrom }}+*
 
-This package setup begins after the [Site Setup Checklist](/MyUmbDocs/site-setup/Site-Setup-Checklist.html#site-setup-checklist) has been completed.
+This package setup begins after the [Site Setup Checklist](../site-setup/Site-Setup-Checklist.html#site-setup-checklist) has been completed.
 
 ## Package Includes
 
-A full list of the Umbraco v8 Starterkit Package contents can be found on the [package includes](Package-Includes.md) page.
+A full list of the Umbraco v{{ page.versionFrom }} Starterkit Package contents can be found on the [package includes](v8/Package-Includes.html) page.
 
 ## v{{ page.versionFrom }} Setup Instructions
 

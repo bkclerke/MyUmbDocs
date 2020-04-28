@@ -5,8 +5,9 @@ meta.Description: "DT Starterkit Package Includes"
 
 layout: default
 title: Package Includes
-nav_order: 4
+nav_order: 1
 parent: Starterkit Package
+has_children: true
 
 packageVersion: 2
 ---
@@ -43,7 +44,7 @@ The below templates are included in the DT Starterkit Package. The list below re
 - `~/Views/Partials/_PC_Switch.cshtml`
 - `~/Views/Partials/PageComponents/_PC_GridLayout.cshtml`
 
-Learn more about individual partial views and their functionality on the [partial views](Partial-Views.md) page.
+[Partial View Files Explained](Partial-Views.html){: .btn .btn-purple}
 
 ## Macros
 
@@ -85,20 +86,20 @@ The scripts folder contains various scripts related to the indiviual project. Th
 
 ## DocumentTypes
 
-- [Home](doctypes/Doctype-Home-Schema.md)
-- [Article Page](doctypes/Doctype-Article-Page-Schema.md)
-- [Components Page](doctypes/Doctype-Comp-Page-Schema.md)
-- [Page Components Folder](doctypes/Doctype-Page-Comp-Folder-Schema.md)
+- [Home](doctypes/Doctype-Home-Schema.html)
+- [Article Page](doctypes/Doctype-Article-Page-Schema.html)
+- [Components Page](doctypes/Doctype-Comp-Page-Schema.html)
+- [Page Components Folder](doctypes/Doctype-Page-Comp-Folder-Schema.html)
 - Page Components [Organizational Folder]
-  - [Grid Layout](doctypes/Doctype-Grid-Layout-Schema.md)
+  - [Grid Layout](doctypes/Doctype-Grid-Layout-Schema.html)
 - Compositions [Organizational Folder]
-  - [Form Settings](doctypes/Doctype-Form-Settings-Schema.md)
-  - [Page Settings](doctypes/Doctype-Page-Settings-Schema.md)
-  - [SEO](doctypes/Doctype-SEO-Schema.md)
-  - [Component Settings](doctypes/Doctype-Comp-Settings-Schema.md)
+  - [Form Settings](doctypes/Doctype-Form-Settings-Schema.html)
+  - [Page Settings](doctypes/Doctype-Page-Settings-Schema.html)
+  - [SEO](doctypes/Doctype-SEO-Schema.html)
+  - [Component Settings](doctypes/Doctype-Comp-Settings-Schema.html)
 - Content Only [Organizational Folder]
-  - [Global Settings](doctypes/Doctype-Global-Settings-Schema.md)
-  - [Nested Address](doctypes/Doctype-Nested-Address-Schema.md)
+  - [Global Settings](doctypes/Doctype-Global-Settings-Schema.html)
+  - [Nested Address](doctypes/Doctype-Nested-Address-Schema.html)
 
 ### Important Document Type Naming Conventions
 {: .no_toc }

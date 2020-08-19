@@ -67,10 +67,9 @@ These are optional suggestions and should be customized to meet your site needs.
 - Delete the extra groups not needed including but not limited to:
   - Writers
   - Editors
-  - Sensitive Data
-- Create Marketing group
+- Create Client Admin group:
   - Allow access to Content and Media section
-  - Give permissions for all tasks except "change node type" and options related to translation as these are not needed.
+  - Give permissions for all tasks except "change node type" and options related to translation as these are not needed (only applicable to Umbraco v7).
 
 # Site Completion Checklist
 

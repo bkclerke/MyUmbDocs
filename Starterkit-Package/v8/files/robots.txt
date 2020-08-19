@@ -1,0 +1,10 @@
+Sitemap: {HTTP_HOST}/xml-sitemap
+User-agent: *
+Disallow: /App_Code/
+Disallow: /App_Data/
+Disallow: /App_Plugins/
+Disallow: /bin/
+Disallow: /Config/
+Disallow: /Umbraco/
+Disallow: /Views/
+Disallow: *utm_*

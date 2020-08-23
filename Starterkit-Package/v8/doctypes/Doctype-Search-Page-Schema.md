@@ -28,4 +28,4 @@ The {{ page.doctype }} Document Type Document Type has a template that handles t
     <dt>Templates</dt> <dd>Search Page</dd>
 </dl>
 
-[Learn more](../Search.md) about how the {{ page.doctype }} works.
+[Learn more](/Starterkit-Package/v8/Search.html) about how the {{ page.doctype }} works.

@@ -1,0 +1,284 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@using Umbraco.Examine;
+@using Examine.Search;
+
+@{
+    PageResult pageResult = new PageResult();
+
+    try
+    {
+        pageResult = Search();
+    }
+    catch (Exception ex)
+    {
+        <span>@ex.Message<br />@ex.StackTrace</span>
+    }
+}
+
+<div>
+    <p>Search for <i>@pageResult.Query</i> returned @pageResult.ResultsCount result@(pageResult.ResultsCount == 1 ? "" : "s")</p>
+
+    <div>
+        Page @pageResult.CurrentPage of @pageResult.PageCount pages
+    </div>
+
+    @if (@pageResult.ResultsCount > 0)
+    {
+        <ol>
+            @foreach (var item in pageResult.Results.Skip((pageResult.CurrentPage - 1) * pageResult.PageSize).Take(pageResult.PageSize))
+            {
+                <li>
+                    <div><a href="@GetUrl(item)">@item.Title</a></div>
+                </li>
+            }
+        </ol>
+        <div>
+            <span>Page:</span>
+
+            @for (int i = 1; i <= pageResult.PageCount; i++)
+            {
+                <a style="margin: 0 5px;" href="/search?search=@pageResult.Query&page=@i">@i</a>
+            }
+        </div>
+    }
+    else
+    {
+        <span>No results found.</span>
+    }
+</div>
+
+@functions {
+    public PageResult Search()
+    {
+        PageResult pageResult = new PageResult();
+
+        pageResult.Query = GetRequestQuery();
+
+        if (string.IsNullOrEmpty(pageResult.Query))
+        {
+            return pageResult;
+        }
+
+        var searcher = GetSearcher();
+
+        var exclude = new List<string>
+            {
+                    "pcFolder",
+                    "globalSettings",
+                    "altLink",
+                    "xmlSitemap"
+            };
+
+        var examineQuery = GetExamineQuery(searcher, pageResult, exclude);
+
+        var content = examineQuery.Execute();
+
+        pageResult.Results = GetSiteSearchResults(content).OrderByDescending(z => z.Score).ToList();
+
+        int currentPage = 1;
+        if (!string.IsNullOrEmpty(Request.QueryString["page"]))
+        {
+            int.TryParse(Request.QueryString["page"], out currentPage);
+        }
+        pageResult.CurrentPage = currentPage;
+
+        if (pageResult.ResultsCount > pageResult.PageSize)
+        {
+            pageResult.PageCount = (int)Math.Ceiling((double)pageResult.ResultsCount / pageResult.PageSize);
+        }
+
+        return pageResult;
+    }
+
+    public string GetRequestQuery()
+    {
+        string query = string.Empty;
+
+        query = string.IsNullOrEmpty(Request["search"])
+                      ? string.Empty
+                      : Request["search"];
+
+        return query;
+    }
+
+    public ISearcher GetSearcher()
+    {
+        IExamineManager examineManager = ExamineManager.Instance;
+
+        string umbracoIndex = Constants.UmbracoIndexes.ExternalIndexName;
+
+        if (!examineManager.TryGetIndex(umbracoIndex, out IIndex index))
+        {
+            throw new InvalidOperationException($"No index found by name {umbracoIndex}");
+        }
+
+        var searcher = index.GetSearcher();
+
+        return searcher;
+    }
+
+    public IBooleanOperation GetExamineQuery(ISearcher searcher, PageResult pageResult, List<string> exclude)
+    {
+        var criteria = searcher.CreateQuery(IndexTypes.Content, BooleanOperation.Or);
+
+        var examineQuery = criteria.Field("bodyText", pageResult.Query);
+
+        examineQuery.Or().Field("nodeName", pageResult.Query);
+
+        examineQuery = ExcludeNodes(examineQuery, exclude);
+
+        examineQuery.Not().Field("hideInSearch", 1.ToString());
+
+        return examineQuery;
+    }
+
+    public string GetUrl(SiteSearchResult item)
+    {
+        string url = item.Url;
+
+        if (!string.IsNullOrEmpty(item.ParentUrl) && (item.ParentContentTypeAlias == "pcFolder" || !item.IsPage))
+        {
+            url = item.ParentUrl;
+        }
+        else if (item.NodeContentTypeAlias == "accordionItem")
+        {
+            url = $"{item.ParentUrl}?item={item.Id}";
+        }
+
+        return url;
+    }
+
+    public IBooleanOperation ExcludeNodes(IBooleanOperation examineQuery, IEnumerable<string> exclude)
+    {
+        foreach (var item in exclude)
+        {
+            examineQuery.Not().Field("__NodeTypeAlias", item);
+        }
+
+        return examineQuery;
+    }
+
+    public IEnumerable<SiteSearchResult> GetSiteSearchResults(ISearchResults searchResults)
+    {
+        List<SiteSearchResult> results = new List<SiteSearchResult>();
+
+        foreach (var item in searchResults)
+        {
+            var node = Umbraco.Content(item.Id);
+
+            var result = new SiteSearchResult()
+            {
+                Id = Convert.ToInt32(node.Id),
+                Title = node.Name,
+                //Summary = GetPreviewText(node),
+                Score = item.Score,
+                Url = node.Url,
+                ParentUrl = node.Parent.Url,
+                IsPage = node.TemplateId != 0,
+                NodeContentTypeAlias = node.ContentType.Alias,
+                ParentContentTypeAlias = node.Parent.ContentType.Alias
+            };
+
+            results.Add(result);
+        }
+
+        return results;
+    }
+
+    public string GetPreviewText(IPublishedContent content)
+    {
+        string previewText = string.Empty;
+
+        if (content.GetProperty("bodyText") != null && content.GetProperty("bodyText").HasValue())
+        {
+            var bodyText = content.GetProperty("bodyText");
+            var gridHtml = @Html.GetGridHtml(content, "bodyText");
+            previewText = gridHtml.ToString();
+            var sourceValue = bodyText.TryConvertTo<PublishedContentType>();
+            previewText = sourceValue.ToString();
+            previewText = bodyText.GetValue().ToString();
+            previewText = previewText.Substring(0, Math.Min(previewText.Length, 500)) + " ...";
+        }
+
+        return global::Umbraco.Core.StringExtensions.StripHtml(previewText).ToString();
+    }
+
+    public class PageResult
+    {
+        private int _currentPage = 1;
+        private int _pageSize = 10;
+        private int _pageCount = 1;
+        private IEnumerable<SiteSearchResult> _results = new List<SiteSearchResult>();
+
+        public int CurrentPage
+        {
+            get
+            {
+                return _currentPage;
+            }
+            set
+            {
+                _currentPage = value;
+            }
+        }
+
+        public int PageSize
+        {
+            get
+            {
+                return _pageSize;
+            }
+            set
+            {
+                _pageSize = value;
+            }
+        }
+
+        public int PageCount
+        {
+            get
+            {
+                return _pageCount;
+            }
+            set
+            {
+                _pageCount = value;
+            }
+        }
+
+        public string Query { get; set; }
+
+        public IEnumerable<SiteSearchResult> Results
+        {
+            get
+            {
+                return _results;
+            }
+            set
+            {
+                _results = value;
+            }
+        }
+
+        public int ResultsCount
+        {
+            get
+            {
+                return Results.Count();
+            }
+        }
+    }
+
+    public class SiteSearchResult
+    {
+        public int Id { get; set; }
+        public string Title { get; set; }
+        public string Summary { get; set; }
+        public float Score { get; set; }
+        public string Url { get; set; }
+        public string ParentUrl { get; set; }
+        public bool IsPage { get; set; }
+        public string NodeContentTypeAlias { get; set; }
+        public string ParentContentTypeAlias { get; set; }
+    }
+}

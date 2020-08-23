@@ -28,4 +28,4 @@ The {{ page.doctype }} Document Type has a template that handles the logic for g
     <dt>Templates</dt> <dd>XML Sitemap</dd>
 </dl>
 
-[Learn more](../XML-Sitemap.md) about how the {{ page.doctype }} works.
+[Learn more](/Starterkit-Package/v8/XML-Sitemap.html) about how the {{ page.doctype }} works.

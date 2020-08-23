@@ -25,10 +25,9 @@ grand_parent: Starterkit Package
 |-------|-------|-------|
 | Meta Data | `~/Views/Partials/_MetaData.cshtml` | [View on Github](https://github.com/bkclerke/MyUmbDocs/blob/master/Starterkit-Package/v8/files/Views/Partials/_MetaData.cshtml) |
 | Header | `~/Views/Partials/_Header.cshtml` | [View on Github](#) |
-| Footer | `~/Views/Partials/_Footer.cshtml` | [View on Github](#) |
-| Page Components | `~/Views/Partials/_PageComponents_.cshtml` | [View on Github](#) |
-| Page Components Switch | `~/Views/Partials/_PC_Switch_.cshtml` | [View on Github](#) |
-| Page Components Grid Layout | `~/Views/Partials/_PC_GridLayout.cshtml` | [View on Github](#) |
+| Footer | `~/Views/Partials/_Footer.cshtml` | [View on Github](https://github.com/bkclerke/MyUmbDocs/blob/master/Starterkit-Package/v8/files/Views/Partials/_Footer.cshtml) |
+| Page Components | `~/Views/Partials/_PageComponents.cshtml` | [View on Github](https://github.com/bkclerke/MyUmbDocs/blob/master/Starterkit-Package/v8/files/Views/Partials/_PageComponents.cshtml) |
+| Page Components Grid Layout | `~/Views/Partials/_PC_GridLayout.cshtml` | [View on Github](https://github.com/bkclerke/MyUmbDocs/blob/master/Starterkit-Package/v8/files/Views/Partials/PageComponents/_GridLayout.cshtml) |
 
 
 ## Meta Data
@@ -53,10 +52,16 @@ For the open graph data, the meta data on the home page will need to be filled o
 
 ## Header
 
+
+
 ## Footer
+
+The footer partial view is setup as a placeholder with a container row.
 
 ## Page Components
 
-## Page Components Switch
+The page components partial view is setup to handle rendering of the page components on a page. The functionality is explained in detail in the [page components documentation](/Components-Library.html).
 
 ## Page Components Grid Layout
+
+The grid layout page component is included in the starterkit for general content pages. The functionality is explained in detail in the [grid layout page component documentation](/Components-Library/Page-Components.html).

@@ -3,7 +3,7 @@ remote_theme: pmarsceill/just-the-docs
 aux_links:
     "MyUmbDocs on GitHub":
       - "//github.com/bkclerke/myumbdocs"
-footer_content: "Copyright &copy; 2019 Blake Clerke."
+footer_content: "Copyright &copy; 2020 Blake Clerke."
 
 pc_descrip: "For page component items, or items without a template or view associated to preview, a different document type icon color is chosen. In this case, the starterkit and various pre-defined page components use an orange icon to denote that the node is for content only purposes and does not have a page / view associated with it. The only template that is assigned to page components is the included Parent Redirect template. This makes sure that if anyone were to navigate to a page component directly, they would be redirected to the parent page where they can see the page component on the page."
 

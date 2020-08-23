@@ -1,0 +1,110 @@
+﻿@inherits UmbracoViewPage<PcGridLayout>
+@{
+    // SETUP COMPONENT ID
+    string componentId = "pc-grid-layout-" + Model.Id;
+
+    // COMPONENT BG SETTINGS
+    bool hasAreaBgImage = Model.HasValue("areaBgImage");
+    string areaBgImagePosition = Model.HasValue("areaBgImagePosition") ? Model.Value("areaBgImagePosition").ToString().ToLower() : "center center";
+    string areaBgSize = Model.HasValue("areaBgSize") ? Model.Value("areaBgSize").ToString().ToLower() : "auto";
+    string areaBgRepeat = Model.HasValue("areaBgRepeat") ? Model.Value("areaBgRepeat").ToString().ToLower() : "no-repeat";
+
+    // COMPONENT BG COLOR THEME
+    string areaBgColor = Model.HasValue("areaBgColor") ? "#" + Model.Value("areaBgColor").ToString() : "transparent";
+    string theme = string.Empty;
+    if (areaBgColor != "transparent")
+    {
+        switch (areaBgColor)
+        {
+            case "#71737b":
+                theme = "theme-light";
+                break;
+            case "#a95f48":
+                theme = "theme-light";
+                break;
+            case "#4e8a9f":
+                theme = "theme-light";
+                break;
+            default:
+                theme = "theme-dark";
+                break;
+        }
+    }
+
+    // SETUP STYLES FOR IMAGE BACKGROUND
+    if (hasAreaBgImage)
+    {
+        var media = Model.Value<IPublishedContent>("areaBgImage");
+        if (media != null)
+        {
+            string areaBgUrl = Model.Value<IPublishedContent>("areaBgImage").Url;
+
+            <text>
+                <style>
+                    .@(componentId) {
+                        background-image:url("@(areaBgUrl)");
+                        background-color: @(areaBgColor);
+                        background-position: @(areaBgImagePosition);
+                        background-size: @(areaBgSize);
+                        background-repeat: @(areaBgRepeat);
+                    }
+                </style>
+            </text>
+        }
+    }
+    else if (areaBgColor != "transparent")
+    {
+        // SETUP STYLES FOR BACKGROUND COLOR ONLY
+        <text>
+            <style>
+                .@(componentId) {
+                    background-color: @(areaBgColor);
+                }
+            </style>
+        </text>
+    }
+
+    // COMPONENT SPACING
+    string topSpace = Model.HasValue("areaTopSpace") ? Model.AreaTopSpace.ToString() : string.Empty;
+    if (!string.IsNullOrEmpty(topSpace))
+    {
+        switch (topSpace)
+        {
+            case "Small":
+                topSpace = "pt-sm";
+                break;
+            case "Medium":
+                topSpace = "pt-md";
+                break;
+            case "Large":
+                topSpace = "pt-lg";
+                break;
+            default:
+                topSpace = string.Empty;
+                break;
+        }
+    }
+    string btmSpace = Model.HasValue("areaBottomSpace") ? Model.AreaBottomSpace.ToString() : string.Empty;
+    if (!string.IsNullOrEmpty(btmSpace))
+    {
+        switch (btmSpace)
+        {
+            case "Small":
+                btmSpace = "pb-sm";
+                break;
+            case "Medium":
+                btmSpace = "pb-md";
+                break;
+            case "Large":
+                btmSpace = "pb-lg";
+                break;
+            default:
+                btmSpace = string.Empty;
+                break;
+        }
+    }
+
+    <div class="pc-grid-layout @componentId @theme @topSpace @btmSpace">
+        @Html.GetGridHtml(Model, "grid", "Bootstrap3")
+    </div>
+}

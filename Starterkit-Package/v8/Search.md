@@ -22,9 +22,9 @@ grand_parent: Starterkit Package
 
 | File Type | Title | Umbraco File Path | Github Link |
 |-------|-------|-------|-------|
-| Template | Search Page | `~/Views/SearchPage.cshtml` | [View on Github](#) |
-| Partial View | Search Form | `~/Views/Partials/Search/_SearchForm.cshtml` | [View on Github](#) |
-| Partial View | Search Results | `~/Views/Partials/Search/_SearchResults.cshtml` | [View on Github](#) |
+| Template | Search Page | `~/Views/SearchPage.cshtml` | [View on Github](https://github.com/bkclerke/MyUmbDocs/blob/master/Starterkit-Package/v8/files/Views/SearchPage.cshtml) |
+| Partial View | Search Form | `~/Views/Partials/Search/_SearchForm.cshtml` | [View on Github](https://github.com/bkclerke/MyUmbDocs/blob/master/Starterkit-Package/v8/files/Views/Partials/Search/_SearchForm.cshtml) |
+| Partial View | Search Results | `~/Views/Partials/Search/_SearchResults.cshtml` | [View on Github](https://github.com/bkclerke/MyUmbDocs/blob/master/Starterkit-Package/v8/files/Views/Partials/Search/_SearchResults.cshtml) |
 
 ## How It Works
 
@@ -35,9 +35,9 @@ For more details on how the search results code works, [checkout the partial vie
 
 ## Setup
 
-1. Setup a content page using the [Search Page Document Type](#) and name the page "Search"
+1. Setup a content page using the [Search Page Document Type](/Starterkit-Package/v8/doctypes/Doctype-Search-Page-Schema.html) and name the page "Search"
    - The page needs to be called search in order for the URL to be correct and the search functionality to work.
-2. Make sure the search page is utilizing the included [Search Template](#)
+2. Make sure the search page is utilizing the included [Search Template](https://github.com/bkclerke/MyUmbDocs/blob/master/Starterkit-Package/v8/files/Views/SearchPage.cshtml)
    - By default the starterkit includes the search form and search results partial views on the search template.
 
 When trying to utilize the site search in other areas of the site, the `_SearchForm.cshtml` partial view can be used to render an input field that will return search results on the Search page. 

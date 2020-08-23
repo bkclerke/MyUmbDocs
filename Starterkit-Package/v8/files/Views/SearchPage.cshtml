@@ -1,0 +1,25 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.SearchPage>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = "master.cshtml";
+}
+
+}
+@section cp_head {
+    @Html.Raw(Model.Value("cpHead"))
+}
+
+<div id="content">
+	<div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                @Html.Partial("Search/_SearchForm")
+                @Html.Partial("Search/_SearchResults")
+            </div>
+        </div>
+    </div>
+</div>
+
+@section cp_scripts {
+    @Html.Raw(Model.Value("cpScripts"))
+}

@@ -1,0 +1,44 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@using Umbraco.Core.Models
+@using Umbraco.Web
+@{
+    Layout = null;
+    Response.ContentType = "application/xml";
+    var home = Model.AncestorOrSelf(1);
+    var selection = Model.Root();
+}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>@Request.Url.Scheme://@Request.Url.Host</loc>
+        <lastmod>@home.UpdateDate.ToString("yyyy-MM-ddTHH:mm:00")+00:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    @Traverse(selection)
+</urlset>
+
+@helper Traverse(IPublishedContent node)
+{
+    var selection = node.Children.Where(x => 
+            !x.Value<bool>("hideInSitemap") 
+            && x.ContentType.Alias != "pcFolder" 
+            && x.ContentType.Alias != "altLink" 
+            && x.ContentType.Alias != "xmlSitemap" 
+            && x.GetTemplateAlias() != "parentRedirect" 
+            && !string.IsNullOrEmpty(x.GetTemplateAlias())
+        ).ToArray();
+    if (selection.Length > 0)
+    {
+        foreach (var page in selection)
+        {
+            <url>
+                <loc>@Request.Url.Scheme://@Request.Url.Host@page.Url.TrimEnd("/")</loc>
+                <lastmod>@page.UpdateDate.ToString("yyyy-MM-ddTHH:mm:00")+00:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.5</priority>
+            </url>
+            @Traverse(page)
+        }
+    }
+}

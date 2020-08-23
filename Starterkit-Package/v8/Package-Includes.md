@@ -46,7 +46,7 @@ The below templates are included in the DT Starterkit Package. The list below re
 - `~Views/Partials/Search/_SearchForm.cshtml`
 - `~/Views/Partials/Search/_SearchResults.cshtml`
 
-[Partial View Files Explained](Partial-Views.md){: .btn .btn-purple}
+[Partial View Files Explained](/Starterkit-Package/v8/Partial-Views.html){: .btn .btn-purple}
 
 ## Macros
 
@@ -92,7 +92,7 @@ The scripts folder contains various scripts related to the indiviual project. Th
 
 There are important practices to follow to keep your site organized and easy for editors to use when setting up your Umbraco website. **Please read the doctype setup instructions and important notes about doctype naming conventions.**
 
-[Doctype Setup Instructions](Document-Types.md){: .btn .btn-purple}
+[Doctype Setup Instructions](/Starterkit-Package/v8/Document-Types.html){: .btn .btn-purple}
 
 ## DataTypes
 

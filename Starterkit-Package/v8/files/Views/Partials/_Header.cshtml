@@ -1,0 +1,111 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@using Umbraco.Web.Models
+@{
+    var home = Model.AncestorOrSelf(1);
+    // GET DEFAULT PAGES
+    var pages = home.Children.Where(x => x.IsVisible() && x.ContentType.Alias != "pcFolder" && x.ContentType.Alias != "globalSettings" && x.ContentType.Alias != "xmlSitemap");
+    // CHECK FOR GLOBAL SETTINGS NODE
+    var globalSettings = home.Children.Where(x => x.ContentType.Alias == "globalSettings").FirstOrDefault();
+    if (globalSettings == null)
+    {
+        <!-- Global Settings Not Configured -->
+    }
+    // SETUP MAIN NAVIGATION
+    var mainNav = globalSettings != null ? globalSettings.Value<IEnumerable<IPublishedContent>>("mainNav") : pages;
+    // SETUP DROPDOWN
+    bool showDropdown = globalSettings != null ? globalSettings.Value<bool>("showDropdown") : false; // IF NO GLOBAL SETTINGS, MANUALLY SET DROPDOWN VALUE
+    string hasMenuClass = showDropdown ? "has-menu" : string.Empty;
+    // SETUP DROPDOWN ARROWS
+    bool navHasArrows = false; // MANUAL SETTING -- FOR DESIGNS WITH NAVIGATION ARROWS ON LARGE SCREENS, SET TO TRUE
+    string hasArrowsClass = showDropdown && navHasArrows ? "has-arrows" : string.Empty;
+    // SETUP HOVER
+    bool menuHoverOnly = false;
+    string menuHoverClass = string.Empty;
+    // DETERMINE IF HOVER OR NOT ON DROPDOWN MENU
+    if (showDropdown)
+    {
+        // IF NO ARROWS ADD HOVER CLASS
+        if (!navHasArrows)
+        {
+            menuHoverOnly = true;
+            menuHoverClass = "has-hover";
+        }
+    }
+
+    <header class="header d-print-none">
+        <div class="container">
+            <nav class="navbar navbar-light navbar-expand-lg">
+                <a class="navbar-brand" href="/">
+                    @if (globalSettings != null && globalSettings.HasValue("headerLogoLg"))
+                    {
+                        var logoImg = globalSettings.Value<IPublishedContent>("headerLogoLg");
+                        if (logoImg != null)
+                        {
+                            <img src="@logoImg.Url" alt="@home.Value("businessName")" class="logo" />
+                        }
+                    }
+                    else {
+                        <img src="~/scripts/scss/images/logo.png" alt="@home.Value("businessName")" class="logo" />
+                    }
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    @if (mainNav.Count() > 0)
+                    {
+                    <ul class="navbar-nav nav-main ml-auto @hasMenuClass @hasArrowsClass @menuHoverClass">
+                        @foreach (var item in mainNav)
+                        {
+                            string itemName = item.HasValue("navName") ? item.Value<string>("navName") : item.Name;
+                            string itemLink = item.Url.TrimEnd('/');
+                            string itemLinkTarget = "_self";
+                            var subNav = item.Children.Where(x => x.IsVisible() && x.ContentType.Alias != "pcFolder" && x.ContentType.Alias != "articlePage");
+
+                            bool altLink = item.ContentType.Alias == "altLink";
+                            if (altLink)
+                            {
+                                var link = item.Value<Link>("link");
+                                if (link != null)
+                                {
+                                    itemLink = link.Url;
+                                    itemLinkTarget = link.Target;
+                                }
+                            }
+                            
+                            <li class="nav-item @(item.Id == Model.Id ? "active" : null) @(showDropdown && subNav.Count() > 0 ? "dropdown" : null)">
+                                <a class="nav-link" href="@itemLink" target="@itemLinkTarget">@itemName</a>
+                                @if (showDropdown && subNav.Count() > 0 && item.ContentType.Alias != "home")
+                                {
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Dropdown</span></a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        @foreach (var subItem in subNav)
+                                        {
+                                            string subItemName = subItem.HasValue("navName") ? subItem.Value<string>("navName") : subItem.Name;
+                                            string subItemLink = subItem.Url.TrimEnd('/');
+                                            string subItemLinkTarget = "_self";
+
+                                            bool subItemAltLink = subItem.ContentType.Alias == "altLink";
+                                            if (subItemAltLink)
+                                            {
+                                                var subLink = subItem.Value<Link>("link");
+                                                if (subLink != null)
+                                                {
+                                                    subItemLink = subLink.Url;
+                                                    subItemLinkTarget = subLink.Target;
+                                                }
+                                            }
+                                            <a class="dropdown-item @(subItem.Id == Model.Id ? "active" : null)" href="@subItemLink" target="@subItemLinkTarget">@subItemName</a>
+                                        }
+                                    </div>
+                                }
+                            </li>
+                        }
+                    </ul>
+                    }
+                </div>
+            </nav>
+        </div>
+    </header>
+
+}

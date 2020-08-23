@@ -125,4 +125,4 @@ There are important practices to follow to keep your site organized and easy for
 |-----|-----|-----|
 | `~/App_Code/PageComponents.cs` | PageComponents.cs needs to be updated during buildout with various document type aliases in order to auto generate the Page Components Folder child node type. | [View Docs](/Components-Library.html#how-it-works) |
 | `~/App_Plugins/BetterLabel/`  (*Directory*)| This is a custom property type for more detailed labels within the Umbraco backoffice. | *N/A* |
-| `~/Robots.txt` | Basic configured robots.txt file for search engines configured to ignore certail folder structure for Umbraco. | [View on Github](files/robots.txt) |
+| `~/Robots.txt` | Basic configured robots.txt file for search engines configured to ignore certail folder structure for Umbraco. | [View File](files/robots.txt) |

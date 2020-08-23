@@ -1,19 +1,19 @@
 - <i class="fa fa-folder" aria-hidden="true"></i> Pages
-  - [Home](/Starterkit-Package/v8/doctypes/Doctype-Home-Schema.md)
-  - [Article Page](/Starterkit-Package/v8/doctypes/Doctype-Article-Page-Schema.md)
-  - [Components Page](/Starterkit-Package/v8/doctypes/Doctype-Comp-Page-Schema.md)
-  - [XML Sitemap](/Starterkit-Package/v8/doctypes/Doctype-XML-Sitemap-Schema.md)
-  - [Search Page](doctypes/Doctype-Search-Page-Schema.md)
+  - [Home](/Starterkit-Package/v8/doctypes/Doctype-Home-Schema.html)
+  - [Article Page](/Starterkit-Package/v8/doctypes/Doctype-Article-Page-Schema.html)
+  - [Components Page](/Starterkit-Package/v8/doctypes/Doctype-Comp-Page-Schema.html)
+  - [XML Sitemap](/Starterkit-Package/v8/doctypes/Doctype-XML-Sitemap-Schema.html)
+  - [Search Page](doctypes/Doctype-Search-Page-Schema.html)
 - <i class="fa fa-folder" aria-hidden="true"></i> Organizational Items
-  - [Page Components Folder](/Starterkit-Package/v8/doctypes/Doctype-Page-Comp-Folder-Schema.md)
+  - [Page Components Folder](/Starterkit-Package/v8/doctypes/Doctype-Page-Comp-Folder-Schema.html)
 - <i class="fa fa-folder" aria-hidden="true"></i> Page Components
-  - [Grid Layout](/Starterkit-Package/v8/doctypes/Doctype-Grid-Layout-Schema.md)
+  - [Grid Layout](/Starterkit-Package/v8/doctypes/Doctype-Grid-Layout-Schema.html)
 - <i class="fa fa-folder" aria-hidden="true"></i> Compositions
-  - [Form Settings](/Starterkit-Package/v8/doctypes/Doctype-Form-Settings-Schema.md)
-  - [Page Settings](/Starterkit-Package/v8/doctypes/Doctype-Page-Settings-Schema.md)
-  - [SEO](/Starterkit-Package/v8/doctypes/Doctype-SEO-Schema.md)
-  - [Component Settings](doctypes/Doctype-Comp-Settings-Schema.md)
+  - [Form Settings](/Starterkit-Package/v8/doctypes/Doctype-Form-Settings-Schema.html)
+  - [Page Settings](/Starterkit-Package/v8/doctypes/Doctype-Page-Settings-Schema.html)
+  - [SEO](/Starterkit-Package/v8/doctypes/Doctype-SEO-Schema.html)
+  - [Component Settings](doctypes/Doctype-Comp-Settings-Schema.html)
 - <i class="fa fa-folder" aria-hidden="true"></i> Content Only
-  - [Global Settings](/Starterkit-Package/v8/doctypes/Doctype-Global-Settings-Schema.md)
-  - [Nested Address](/Starterkit-Package/v8/doctypes/Doctype-Nested-Address-Schema.md)
-  - [Alternate Link](/Starterkit-Package/v8/doctypes/Doctype-Alternate-Link-Schema.md)
+  - [Global Settings](/Starterkit-Package/v8/doctypes/Doctype-Global-Settings-Schema.html)
+  - [Nested Address](/Starterkit-Package/v8/doctypes/Doctype-Nested-Address-Schema.html)
+  - [Alternate Link](/Starterkit-Package/v8/doctypes/Doctype-Alternate-Link-Schema.html)

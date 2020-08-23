@@ -1,9 +1,85 @@
 // ----------------------------------
+// VARIABLES
+// ----------------------------------
+
+// BASE MEDIA QUERIES
+$device-sm: 540px;
+$device-md-max: 767px; // MAX WIDTH IPAD FIX
+$device-md: 768px;
+$device-lg: 992px;
+$device-xl: 1200px;
+
+// FONT SIZE
+$font-base-size: 16px;
+$font-line-height: 1.5em;
+
+// FONT FAMILIES
+$font-header: 'Montserrat', sans-serif;
+$font-family: 'Montserrat', sans-serif;
+$font-serif: 'Roboto Slab', serif;
+
+// COMPONENTS THEME
+$pc-light: #fff;
+$pc-dark: #000;
+
+
+
+// ----------------------------------
 // EXTEND
 // ----------------------------------
 
 .animate-all {
-    transition: all ease .3s;
+    transition: .3s ease all;
+}
+
+.header-text {
+    font-family: $font-header;
+    font-weight: 600;
+}
+
+.transform-scale {
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);
+
+    &:hover {
+        z-index: 2;
+        -webkit-transition: all 200ms ease-in;
+        -webkit-transform: scale(1.15);
+        -ms-transition: all 200ms ease-in;
+        -ms-transform: scale(1.15);
+        -moz-transition: all 200ms ease-in;
+        -moz-transform: scale(1.15);
+        transition: all 200ms ease-in;
+        transform: scale(1.15);
+    }
+}
+
+.bg-cover {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+// ----------------------------------
+// MIXIN
+// ----------------------------------
+
+
+// FONT AWESOME
+@mixin fontawesome($weight) {
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free";
+    font-weight: $weight; // 900 SOLID, 400 REGULAR OR BRANDS, 300 LIGHT
 }
 
 // ----------------------------------
@@ -131,6 +207,13 @@ body {
     font-size: $font-base-size;
     line-height: $font-line-height;
     word-break: break-word;
+}
+
+.text-right {
+    @media (max-width: 768px)
+    {
+        text-align: center;
+    }
 }
 
 // GENERAL LIGHT THEME

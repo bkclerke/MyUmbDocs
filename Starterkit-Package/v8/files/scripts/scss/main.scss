@@ -2,21 +2,10 @@
 // BASE INCLUDES
 // -----------------------------------------------
 
-
-// BASE > LAYOUT
-@import "base/layout/breakpoints";
-@import "base/layout/spacing";
-@import "base/layout/type";
-@import "base/layout/color";
-@import "base/layout/layout";
-@import "base/layout/navbar";
-
-
-// BASE > THEME
-@import "base/theme/theme";
-@import "base/theme/type";
-
-
+@import "base/spacing";
+@import "base/base";
+@import "base/navbar";
+@import "base/type";
 
 // -----------------------------------------------
 // CUSTOM THEME

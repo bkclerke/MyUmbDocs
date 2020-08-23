@@ -86,7 +86,7 @@ The starterkit includes the following for getting started:
 - `~/scripts/scss/` [Directory]
   - In the scripts folder, there is a `/scss/` or `/less/` directory to store the files used to generate the website stylesheets with the preprocessor you want to use. 
   - Using this directory makes it so that a backoffice user cannot modify the compiled stylesheet directly from the Umbraco backoffice.
-  - Learn More about the [Base Stylesheet Structure](/Starterkit-Package/v8/Stylesheets.html).
+  - Learn More about the [Base Stylesheet Structure](/Starterkit-Package/v8/Stylesheets.html) or [view the scss file structure on Github](https://github.com/bkclerke/MyUmbDocs/tree/master/Starterkit-Package/v8/files/scripts/scss).
 - `~/scripts/main.js`
   - The main.js file includes a custom function for linking directly to bootstrap accordion items and opening them on page load. [View on Github](https://github.com/bkclerke/MyUmbDocs/blob/master/Starterkit-Package/v8/files/scripts/main.js).
   - This file is intended for initializing custom scripts, plugins and resources your site needs.

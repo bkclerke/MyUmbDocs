@@ -1,0 +1,160 @@
+// ----------------------------------
+// EXTEND
+// ----------------------------------
+
+.animate-all {
+    transition: all ease .3s;
+}
+
+// ----------------------------------
+// LAYOUT
+// ----------------------------------
+
+// GENERAL
+.no-gutter {
+    @media (min-width: $device-sm) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto !important;
+}
+
+ol, ul, p {
+    margin-bottom: $space-p;
+}
+
+b, strong {
+    font-weight: bold; // OVERRIDE BOOTSTRAP BOLDER 
+}
+
+// UMBRACO GRID
+.umb-grid {
+    .no-gutters {
+        .row {
+            .column {
+                padding: 0;
+    
+                &:first-child {
+                    padding-left: $space-gutter;
+                }
+    
+                &:last-child {
+                    padding-right: $space-gutter;
+                }
+            }
+        }
+    }
+    .align-items-center {
+        .row {
+            align-items: center;
+        }
+    }
+}
+
+// RICH TEXT EDITOR
+img.img-left {
+    float: left;
+    margin-right: 1em;
+
+    @media (max-width: $device-md)
+    {
+        float: none;
+        margin-right: 0;
+        margin-bottom: $space-p;
+    }
+}
+
+img.img-right {
+    float: right;
+    margin-left: 1em;
+
+    @media (max-width: $device-md)
+    {
+        float: none;
+        margin-left: 0;
+        margin-bottom: $space-p;
+    }
+}
+
+// GRID MEDIA OBJECT
+.caption {
+    font-style: italic;
+    font-size: .75rem;
+    margin: .25rem 0 0 0;
+}
+
+
+// ----------------------------------
+// PAGE COMPONENTS
+// ----------------------------------
+
+// INTRO TEXT
+.intro-text, .outro-text {
+    text-align: center;
+
+    h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.intro-text {
+    margin-bottom: $space-sm;
+}
+
+.outro-text {
+    margin-top: $space-sm;
+}
+
+// GRID LAYOUT
+.pc-grid-layout {
+    p, ul, ol {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+// ----------------------------------
+// THEME
+// ----------------------------------
+
+// GENERAL
+body {
+    font-family: $font-family;
+    font-size: $font-base-size;
+    line-height: $font-line-height;
+    word-break: break-word;
+}
+
+// GENERAL LIGHT THEME
+.theme-light {
+    color: $pc-light;
+
+    h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+        color: $pc-light;
+    }
+
+    a {
+        color: $pc-light;
+    }
+}
+
+// GENERAL DARK THEME
+.theme-dark {
+    color: $pc-dark;
+
+    h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+        color: $pc-dark;
+    }
+
+    a {
+        color: $pc-dark;
+    }
+}

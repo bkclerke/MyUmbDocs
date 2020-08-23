@@ -12,7 +12,7 @@ grand_parent: Starterkit Package
 # Search
 {: .no_toc }
 
-## TOC
+## Table of Contents
 {: .no_toc .text-delta }
 
 1. TOC

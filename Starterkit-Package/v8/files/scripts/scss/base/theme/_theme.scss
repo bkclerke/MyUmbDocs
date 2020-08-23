@@ -1,0 +1,55 @@
+// ----------------------------------
+// VARIABLES
+// ----------------------------------
+
+
+
+
+// ----------------------------------
+// EXTEND & ANIMATE
+// ----------------------------------
+
+.animate-all {
+    transform: .3s ease all;
+}
+
+.transform-scale {
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);
+
+    &:hover {
+        z-index: 2;
+        -webkit-transition: all 200ms ease-in;
+        -webkit-transform: scale(1.15);
+        -ms-transition: all 200ms ease-in;
+        -ms-transform: scale(1.15);
+        -moz-transition: all 200ms ease-in;
+        -moz-transform: scale(1.15);
+        transition: all 200ms ease-in;
+        transform: scale(1.15);
+    }
+}
+
+.bg-cover {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+// ----------------------------------
+// THEME
+// ----------------------------------
+
+/* GENERAL */
+.text-right {
+    @media (max-width: 768px)
+    {
+        text-align: center;
+    }
+}

@@ -17,7 +17,7 @@ packageVersion: 2
 
 *Version {{ page.packageVersion }} Compatible with Umbraco {{ page.versionFrom }}+*
 
-Listed below are all the items included in the DT Starterkit Package.
+Listed below are all the items included in the Starterkit Package.
 
 ## Table of Contents
 {: .no_toc .text-delta }
@@ -27,28 +27,22 @@ Listed below are all the items included in the DT Starterkit Package.
 
 ## Templates
 
-The below templates are included in the DT Starterkit Package. The list below reflects the master template structure it should be reflected in the Umbraco Templates folder.
+The below templates are included in the Starterkit Package.
 
-- Master `~/Views/master.cshtml`
-  - Components Page `~/Views/componentsPage.cshtml`
-  - Article Page `~/Views/articlePage.cshtml`
-  - Search Page `~/Views/searchPage.cshtml`
-- Parent Redirect `~/Views/parentRedirect.cshtml`
-- XML Sitemap `~/Views/xmlSitemap.cshtml`
+{% include starterkit-views.md %}
+
 
 ## Partial Views
 
-- `~/Views/Partials/_MetaData.cshtml`
-- `~/Views/Partials/_Header.cshtml`
-- `~/Views/Partials/_Footer.cshtml`
-- `~/Views/Partials/_PageComponents.cshtml`
-- `~/Views/Partials/PageComponents/_PC_GridLayout.cshtml`
-- `~Views/Partials/Search/_SearchForm.cshtml`
-- `~/Views/Partials/Search/_SearchResults.cshtml`
+The below partial views are included in the Starterkit Package.
+
+{% include starterkit-partialviews.md %}
 
 [Partial View Files Explained](/Starterkit-Package/v8/Partial-Views.html){: .btn .btn-purple}
 
 ## Macros
+
+The macros included in the starterkit listed below are features directly related to the form handler to handle all form submissions within Umbraco. [View Form Handler Documentation](/Form-Handler.html).
 
 - Form Handler
   - Macro partial view: `~/Views/MacroPartials/FormHandler.cshtml`
@@ -63,33 +57,55 @@ The below templates are included in the DT Starterkit Package. The list below re
 - Contact User Email Template
   - Macro partial view: `~/Views/MacroPartials/ContactUserEmailTemplate.cshtml`
 
-[View Form Handler Documentation](/Form-Handler.html){: .btn .btn-purple}
-
 ## Stylesheets
 
-The stylesheets folder contains various stylesheets related to the indiviual project. The starterkit includes the following for getting started.
+Basic unmodified vendor stylesheets are included in the starterkit. These files are located in the `/css/` folder. 
+
+The master template utilizes these stylesheets by default with the client dependency to bundle and minify these resources. You can update these to use the latest version of the plugin when you start a site.
 
 - `~/css/user.css`
-  - The user stylesheet will need to be configured to be used by the rich text editor in Umbraco. It is typically an empty file that just imports the main css file to display some of the styling into the rich text editor within Umbraco.
+  - The user stylesheet will need to be configured to be used by the rich text editor in Umbraco. It is typically an empty file that just imports the main css file to display some of the styling into the rich text editor within Umbraco. [View on Github](https://github.com/bkclerke/MyUmbDocs/blob/master/Starterkit-Package/v8/files/css/user.css).
 - `~/css/bootstrap.css`
-  - Unmodified vendor stylesheet is included in the starterkit.
+  - The starterkit includes an unmodified version of the vendor <a href="https://getbootstrap.com" target="_blank">Bootstrap</a> stylesheet.
 - `~/css/fa-all.css`
-  - Unmodified vendor stylesheet is included in the starterkit.
+  - The starterkit includes the vendor <a href="https://fontawesome.com" target="_blank">FontAwesome</a> stylesheet. The stylesheet name has been updated and the webfonts file path has been updated to reflect the new directory location but the styles remain untouched.
 - `~/css/fonts/` [Directory]
-  - This directory includes unmodified vendor font awesome webfont files.
+  - The fonts directory includes unmodified vendor <a href="https://fontawesome.com" target="_blank">FontAwesome</a> webfont files.
+
+### Base Stylesheet Structure
+
+The starterkit base stylesheets are located in the `~/scripts/scss/` folder. Using this directory makes it so that a backoffice user cannot modify the compiled stylesheet directly from the Umbraco backoffice.
+
+
+[View Base Stylesheet Structure](/Starterkit-Package/v8/Stylesheets.html){: .btn .btn-purple}
 
 ## Scripts
 
-The scripts folder contains various scripts related to the indiviual project. The starterkit includes the following for getting started.
+The starterkit includes the following for getting started:
 
 - `~/scripts/scss/` [Directory]
-  - In the scripts folder, there is a `/scss/` or `/less/` directory to store the files used to generate the website stylesheets with the preprocessor you want to use. Typically SASS is the preferred method. You will need to add your sass files in this directory. This makes it so that a backoffice user cannot modify the stylesheet directly from the Umbraco backoffice and forces this type of development to be done by a developer. 
+  - In the scripts folder, there is a `/scss/` or `/less/` directory to store the files used to generate the website stylesheets with the preprocessor you want to use. 
+  - Using this directory makes it so that a backoffice user cannot modify the compiled stylesheet directly from the Umbraco backoffice.
+  - Learn More about the [Base Stylesheet Structure](/Starterkit-Package/v8/Stylesheets.html).
 - `~/scripts/main.js`
-  - The main.js file is the default file for storing the javascript used by the site. This file would be customized based on what plugins and resources your site needs.
+  - The main.js file includes a custom function for linking directly to bootstrap accordion items and opening them on page load. [View on Github](https://github.com/bkclerke/MyUmbDocs/blob/master/Starterkit-Package/v8/files/scripts/main.js).
+  - This file is intended for initializing custom scripts, plugins and resources your site needs.
+  - This file is included in the master template client dependency to bundle and minify this resource. 
+- `~/scripts/bootstrap.bundle.min.js`
+  - The starterkit includes an unmodified version of the vendor <a href="https://getbootstrap.com" target="_blank">Bootstrap</a> javascript.
+- `~/scripts/jquery-3.5.1.slim.min.js`
+  - The starterkit includes an unmodified version of the vendor jquery library that <a href="https://getbootstrap.com" target="_blank">Bootstrap</a> requires.
+- `~/scripts/jquery.validate-1.15.0.min.js`
+  - The starterkit includes an unmodified version of the vendor jquery validate library. This is utilized when building custom forms with the [form handler](/Form-Handler.html).
+
+### Recommended Scripts and Plugins
+
+- `~/scripts/matchheight.min.js`
+  - A jquery plugin called <a href="https://brm.io/jquery-match-height/" target="_blank">Match Heights</a> is used frequently in builds.
 
 ## DocumentTypes
 
-{% include doctypes.md %}
+{% include starterkit-doctypes.md %}
 
 There are important practices to follow to keep your site organized and easy for editors to use when setting up your Umbraco website. **Please read the doctype setup instructions and important notes about doctype naming conventions.**
 
@@ -97,27 +113,7 @@ There are important practices to follow to keep your site organized and easy for
 
 ## DataTypes
 
-- Starterkit [Organizational Folder]
-  - Nested Address
-  - Better Label
-  - Image Picker
-  - Navigation MNTP
-  - Open Graph Image Cropper
-  - Schema Markup Type
-  - Simple Editor
-  - Single Link
-- Page Components [Organizational Folder]
-  - Article Image Cropper
-  - Grid Layout
-- Component Settings [Organizational Folder]
-  - Background Position Dropdown
-  - Background Repeat Dropdown
-  - Background Size Dropdown
-  - Horizontal Alignment Dropdown
-  - Size Dropdown
-  - Text Markup Dropdown
-  - Vertical Alignment Dropdown
-  - Video Aspect Ratio Dropdown
+{% include starterkit-datatypes.md %}
 
 ## Custom Code
 

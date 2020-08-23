@@ -1,0 +1,33 @@
+// ----------------------------------
+// VARIABLES
+// ----------------------------------
+
+// FONT SIZE
+$font-base-size: 14px;
+$font-line-height: 1.5em;
+
+// FONT FAMILIES
+$font-header: 'Montserrat', sans-serif;
+$font-family: 'Montserrat', sans-serif;
+$font-serif: 'Roboto Slab', serif;
+
+// EXTEND
+.header-text {
+    font-family: $font-header;
+    font-weight: 600;
+}
+
+
+// ----------------------------------
+// THEME
+// ----------------------------------
+
+// FONT AWESOME
+@mixin fontawesome($weight) {
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free";
+    font-weight: $weight; // 900 SOLID, 400 REGULAR OR BRANDS, 300 LIGHT
+}

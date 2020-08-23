@@ -1,0 +1,13 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@{
+	Layout = "master.cshtml";
+	<div id="content">
+        @Html.Partial("_PageComponents")
+    </div>
+}
+@section cp_head {
+    @Html.Raw(Model.Value("cpHead"))
+}
+@section cp_scripts {
+    @Html.Raw(Model.Value("cpScripts"))
+}

@@ -5,9 +5,9 @@
   - [XML Sitemap](/Starterkit-Package/v8/doctypes/Doctype-XML-Sitemap-Schema.html)
   - [Search Page](doctypes/Doctype-Search-Page-Schema.html)
 - <i class="fa fa-folder" aria-hidden="true"></i> Organizational Items
-  - [Page Components Folder](/Starterkit-Package/v8/doctypes/Doctype-Page-Comp-Folder-Schema.html)
+  - [Page Components Folder](/Components-Library/v8/Page-Components/Doctype-Page-Comp-Folder-Schema.html)
 - <i class="fa fa-folder" aria-hidden="true"></i> Page Components
-  - [Grid Layout](/Starterkit-Package/v8/doctypes/Doctype-Grid-Layout-Schema.html)
+  - [Grid Layout](/Components-Library/v8/Page-Components/Doctype-Grid-Layout-Schema.html)
 - <i class="fa fa-folder" aria-hidden="true"></i> Compositions
   - [Form Settings](/Starterkit-Package/v8/doctypes/Doctype-Form-Settings-Schema.html)
   - [Page Settings](/Starterkit-Package/v8/doctypes/Doctype-Page-Settings-Schema.html)

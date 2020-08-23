@@ -1,0 +1,80 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+	Layout = "master.cshtml";
+	string siteDomain = String.Format("{0}://{1}", Request.Url.Scheme, Request.Url.Host);
+    string pageUrl = String.Format("{0}{1}", siteDomain, Request.RawUrl.TrimEnd('/'));
+	
+	var home = Model.Content.AncestorOrSelf(1);
+	var blogPage = Model.Content.AncestorOrSelf(1).Children().Where(x => x.DocumentTypeAlias == "blogPage").FirstOrDefault();
+
+	string articleTitle = Model.Content.HasValue("articleTitle") ? Model.Content.GetPropertyValue<string>("articleTitle") : Model.Content.Name;
+	string articleAuthor = Model.Content.HasValue("articleAuthor") ? Model.Content.GetPropertyValue<string>("articleAuthor") : blogPage.GetPropertyValue<string>("defaultAuthorName");
+	// SCHEMA INFORMATION
+	string articleImgUrl = string.Empty;
+	if (Model.Content.HasValue("ogImage"))
+	{
+	    articleImgUrl = siteDomain + Url.GetCropUrl(Model.Content, "ogImage", "og").ToString();
+	}
+	else if (Model.Content.HasValue("articleImage"))
+	{
+	    articleImgUrl = siteDomain + Url.GetCropUrl(Model.Content, "articleImage", "lg").ToString();
+	}
+	string articleDate = string.Format("{0: yyyy-MM-dd}", Model.Content.GetPropertyValue<DateTime>("articleDate"));
+	string articleDescription = Model.Content.HasValue("metaDescription") ? Model.Content.GetPropertyValue("metaDescription").ToString() : Model.Content.GetPropertyValue("previewText").ToString();
+}
+@section cp_head {
+    <!-- BLOG SCHEMA -->
+    <script type="application/ld+json">
+    	{
+    		"@@context": "http://schema.org", 
+    		"@@type": "BlogPosting",
+    		"mainEntityOfPage": "@pageUrl",
+    		"headline": "@articleTitle",
+     		"image": {
+    			"@@type": "ImageObject",
+    			"url": "@articleImgUrl"
+    		},
+    		"datePublished": "@articleDate",
+    		"dateCreated": "@articleDate",
+    		"dateModified": "@articleDate",
+    		"description": "@articleDescription",
+            "author": {
+            	"@@type": "Person",
+            	"name": "@articleAuthor"
+            },
+    		"publisher": {
+    			"@@type": "Organization",
+    			"name": "@home.GetPropertyValue("businessName")",
+    			"logo": {
+    				"@@type": "ImageObject",
+    				"url": "@siteDomain/scripts/scss/images/logo.png"
+    			}
+    		}
+    	}
+    </script>
+    @Html.Raw(Model.Value("cpHead"))
+}
+<div id="content">
+    <article class="article">
+	@Html.Partial("_PageComponents")
+	<div class="container pb-sm">
+		<div class="row">
+			<div class="col">
+				<p class="article-date">
+					@if (Model.Content.HasValue("articleDate"))
+					{
+						@:@string.Format("{0: MMMM dd, yyyy}", Model.Content.GetPropertyValue<DateTime>("articleDate"))
+					}
+					@if (!string.IsNullOrEmpty(articleAuthor))
+					{
+						@: | by @articleAuthor
+					}
+				</p>
+			</div>
+		</div>
+	</div>
+</article>
+</div>
+@section cp_scripts {
+    @Html.Raw(Model.Value("cpScripts"))
+}

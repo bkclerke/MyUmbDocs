@@ -1,0 +1,48 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@using ClientDependency.Core.Mvc
+@{
+    Layout = null;
+    Html.RequiresCss("~/css/bootstrap.css", 1);
+    Html.RequiresCss("~/css/fa-all.css", 2);
+    //Html.RequiresCss("~/css/slick.css", 3);
+    //Html.RequiresCss("~/css/slick-theme.css", 4);
+    Html.RequiresCss("~/scripts/scss/main.css", 3);
+    Html.RequiresJs("~/scripts/jquery-3.5.1.slim.min.js", 1);
+    Html.RequiresJs("~/scripts/bootstrap.bundle.min.js", 2);
+    Html.RequiresJs("~/scripts/matchheight.min.js", 3);
+    //Html.RequiresJs("~/scripts/slick.min.js", 4);
+    Html.RequiresJs("~/scripts/main.js", 4);
+    Html.RequiresJs("~/scripts/jquery.validate-1.15.0.min.js", 5);
+    
+    var globalSettings = Model.AncestorOrSelf(1).Children.Where(x => x.ContentType.Alias == "globalSettings").FirstOrDefault();
+}
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    @Html.Partial("_MetaData")
+    @Html.Raw(Html.RenderCssHere())
+    @RenderSection("cp_head", required: false)
+    @if (globalSettings != null)
+    {
+        @Html.Raw(globalSettings.Value("globalHeadTag"))
+    }
+  </head>
+  <body>
+    @if (globalSettings != null)
+    {
+        @Html.Raw(globalSettings.Value("globalBodyTag"))
+    }
+    <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+    @Html.Partial("_Header")
+    @RenderBody()
+    @Html.Partial("_Footer")
+    @Html.Raw(Html.RenderJsHere())
+    @RenderSection("cp_scripts", required: false)
+    @if (globalSettings != null)
+    {
+        @Html.Raw(globalSettings.Value("globalScripts"))
+    }
+  </body>
+</html>

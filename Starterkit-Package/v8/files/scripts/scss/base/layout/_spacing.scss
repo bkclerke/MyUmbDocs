@@ -1,0 +1,104 @@
+// ----------------------------------
+// VARIABLES
+// ----------------------------------
+
+// SPACING
+$space-p: 2.143rem; // 30px
+$space-xs: 1rem;
+$space-sm: 25px;
+$space-md: 50px;
+$space-lg: 75px;
+$space-gutter: 15px;
+
+
+// ----------------------------------
+// LAYOUT
+// ----------------------------------
+
+// SPACING
+.mt-0 {
+    margin-top: 0;
+}
+
+.mt-p {
+    margin-top: $space-p;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.mb-p {
+    margin-bottom: $space-p;
+}
+
+// SPACING MARGINS
+.mt-xs {
+    margin-top: $space-xs;
+}
+
+.mt-sm {
+    margin-top: $space-sm;
+}
+
+.mt-md {
+    margin-top: $space-md;
+}
+
+.mt-lg {
+    margin-top: $space-lg;
+}
+
+.mb-xs {
+    margin-bottom: $space-xs;
+}
+
+.mb-sm {
+    margin-bottom: $space-sm;
+}
+
+.mb-md {
+    margin-bottom: $space-md;
+}
+
+.mb-lg {
+    margin-bottom: $space-lg;
+}
+
+// SPACING PADDING
+.pt-xs {
+    padding-top: $space-xs;
+}
+
+.pt-sm {
+    padding-top: $space-sm;
+}
+
+.pt-md {
+    padding-top: $space-md;
+}
+
+.pt-lg {
+    padding-top: $space-lg;
+}
+
+.pb-xs {
+    padding-bottom: $space-xs;
+}
+
+.pb-sm {
+    padding-bottom: $space-sm;
+}
+
+.pb-md {
+    padding-bottom: $space-md;
+}
+
+.pb-lg {
+    padding-bottom: $space-lg;
+}
+
+.plr-md {
+    padding-left: $space-md;
+    padding-right: $space-md;
+}

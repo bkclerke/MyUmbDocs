@@ -12,7 +12,7 @@ grand_parent: Starterkit Package
 # Dynamic XML Sitemap
 {: .no_toc }
 
-## TOC
+## Table of Contents
 {: .no_toc .text-delta }
 
 1. TOC

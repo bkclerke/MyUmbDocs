@@ -1,0 +1,136 @@
+// ----------------------------------
+// VARIABLES
+// ----------------------------------
+
+
+
+// ----------------------------------
+// LAYOUT
+// ----------------------------------
+
+// NAVBAR
+.navbar-brand {
+    max-width: 250px;
+}
+
+.navbar-nav {
+    // HOVER FOR LARGE DISPLAY ONLY
+    &.has-hover {
+        @media(min-width: $nav-mobile)
+        {
+            > li.nav-item {
+                > a.nav-link {
+                    display: inline-block;
+                }
+                &.dropdown {
+                    &:hover {
+                        .dropdown-menu {
+                            display: block;
+                        }
+                    }
+                    a.nav-link {
+                        &.dropdown-toggle {
+                            padding-left: .25rem;
+                            padding-right: .25rem;
+
+                            // .sr-only
+                            border: 0;
+                            clip: rect(0, 0, 0, 0);
+                            height: 1px;
+                            margin: -1px;
+                            overflow: hidden;
+                            // padding: 0;
+                            position: absolute;
+                            width: 1px;
+
+                            // .sr-only-focusable
+                            &:focus, &:active {
+                                clip: auto;
+                                height: auto;
+                                margin: 0;
+                                overflow: visible;
+                                position: static;
+                                width: auto;
+                            }
+
+                            &::after {
+                                margin-left: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // HAS ARROWS ON LARGE DISPLAY
+    &.has-arrows {
+        > li.nav-item {
+            > a.nav-link {
+                display: inline-block;
+            }
+            &.dropdown {
+                a.nav-link {
+                    &:first-child {
+                        padding-right: 0;
+                    }
+                    &.dropdown-toggle {
+                        padding-left: .25rem;
+                        &::after {
+                            margin-left: 0;
+                        }
+                    }
+                    @media (max-width: $device-xl) and (min-width: $device-lg)
+                    {
+                        // NAV BREAKS TO TWO LINES - ADJUST PADDING ACCORDINGLY
+                        &:first-child {
+                            padding-right: .5rem; // BOOTSTRAP DEFAULT
+                            padding-bottom: 0;
+                        }
+                        &.dropdown-toggle {
+                            padding-left: .5rem; // BOOTSTRAP DEFAULT
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // ALWAYS SHOW ARROWS ON MOBILE
+    &.has-menu {
+        @media (max-width: $nav-mobile)
+        {
+            > li.nav-item {
+                > a.nav-link {
+                    display: inline-block;
+                    &:first-child {
+                        width: 100%;
+                    }
+                }
+                &.dropdown {
+                    a.nav-link {
+                        &:first-child {
+                            padding-right: 0;
+                            width: calc(100% - 50px);
+                        }
+                        &.dropdown-toggle {
+                            padding-left: .5rem;
+                            padding-right: .5rem;
+                            margin-left: -4px;
+                            width: 50px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// DROPDOWN MENU
+.dropdown-menu {
+    margin: 0;
+}

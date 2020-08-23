@@ -10,11 +10,20 @@ grand_parent: Starterkit Package
 ---
 
 # Starterkit Document Types
+{: .no_toc }
 
-{% include doctypes.md %}
+## Table of Contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+
+## Starterkit Document Types
+
+{% include starterkit-doctypes.md %}
 
 ## Important Document Type Naming Conventions
-{: .no_toc }
 
 Default naming conventions for document types is the doctype name in camel case format. For example, `componentsPage`, `articlePage` and `home`.
 
@@ -26,4 +35,6 @@ Composition document types are prefixed with the word `comp` before the doctype 
 
 Page component document type aliases must be prefixed with the lowercase letters `pc` to denote that this document type is setup as a page component. Page component document type icons are also a different color than the black / default color. The starterkit uses the color orange to denote nodes without views / templates associated to them including the page components.
 
-This practice makes it easy to recognize when selecting doctypes within Umbraco. It also helps users denote the difference in nodes when they see the document type icons and colors.
+This practice makes it easy to recognize when selecting doctypes within Umbraco and helps users denote the difference in nodes when they see the document type icons and colors.
+
+[Learn More About Page Components](/Components-Library.html){: .btn .btn-purple}

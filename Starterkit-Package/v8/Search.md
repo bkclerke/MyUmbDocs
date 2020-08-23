@@ -30,7 +30,7 @@ grand_parent: Starterkit Package
 
 The Search content page utilizes the Search Template. The starterkit includes two partial views on this template for the search form and the search results. The default site search is very basic and returns a list of content items matching the users search with a link to the content page.
 
-For more details on how the search results code works, [checkout the partial view on github](#).
+For more details on how the search results code works, [checkout the partial view on github](https://github.com/bkclerke/MyUmbDocs/blob/master/Starterkit-Package/v8/files/Views/Partials/Search/_SearchResults.cshtml).
 
 
 ## Setup

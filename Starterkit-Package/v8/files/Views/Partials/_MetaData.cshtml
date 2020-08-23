@@ -41,9 +41,10 @@
     {
         <meta name="robots" content="noindex, nofollow">
     }
-    <!-- BING --><meta http-equiv="content-language" content="en-us">
+    <link rel="shortcut icon" href="/favicon.ico">
     <link rel="canonical" href="@pageUrl" hreflang="en-us" />
-
+    <!-- BING -->
+    <meta http-equiv="content-language" content="en-us">
     <!--OPEN GRAPH-->
     <meta property="og:url" content="@pageUrl" />
     <meta property="og:title" content="@ogTitle" />
@@ -64,6 +65,7 @@
         {
         "@@context": "http://schema.org",
         "@@type": "@schemaType",
+        "name": "@businessName",
         @if (businessAddress != null)
         {
             foreach (var address in businessAddress)
@@ -79,9 +81,9 @@
                 </text>
             }
         }
-        "description": "@home.Value("metaDescription")",
-        "name": "@businessName",
-        "telephone": "@businessPhone"
+        "telephone": "@businessPhone",
+        "url": "@siteDomain",
+        "description": "@home.Value("metaDescription")"
         }
     </script>
 }

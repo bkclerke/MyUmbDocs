@@ -27,7 +27,7 @@ grand_parent: Starterkit Package
 | Header | `~/Views/Partials/_Header.cshtml` | [View on Github](#) |
 | Footer | `~/Views/Partials/_Footer.cshtml` | [View on Github](https://github.com/bkclerke/MyUmbDocs/blob/master/Starterkit-Package/v8/files/Views/Partials/_Footer.cshtml) |
 | Page Components | `~/Views/Partials/_PageComponents.cshtml` | [View on Github](https://github.com/bkclerke/MyUmbDocs/blob/master/Starterkit-Package/v8/files/Views/Partials/_PageComponents.cshtml) |
-| Page Components Grid Layout | `~/Views/Partials/_PC_GridLayout.cshtml` | [View on Github](https://github.com/bkclerke/MyUmbDocs/blob/master/Starterkit-Package/v8/files/Views/Partials/PageComponents/_GridLayout.cshtml) |
+| Page Components Grid Layout | `~/Views/Partials/_pcGridLayout.cshtml` | [View on Github](https://github.com/bkclerke/MyUmbDocs/blob/master/Starterkit-Package/v8/files/Views/Partials/PageComponents/_pcGridLayout.cshtml) |
 
 
 ## Meta Data

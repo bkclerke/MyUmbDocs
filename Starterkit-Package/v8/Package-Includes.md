@@ -63,6 +63,7 @@ The below templates are included in the DT Starterkit Package. The list below re
 - Contact User Email Template
   - Macro partial view: `~/Views/MacroPartials/ContactUserEmailTemplate.cshtml`
 
+[View Form Handler Documentation](/Form-Handler.html){: .btn .btn-purple}
 
 ## Stylesheets
 
@@ -120,8 +121,8 @@ There are important practices to follow to keep your site organized and easy for
 
 ## Custom Code
 
-- `~/App_Code/PageComponents.cs`
-  - PageComponents.cs needs to be updated during buildout with various document type aliases in order to auto generate the Page Components Folder child node type.
-- `~/App_Plugins/BetterLabel/` [Directory]
-  - This is a custom property type.
-- `~/Robots.txt`
+| File Path | Description | Github Link |
+|-----|-----|-----|
+| `~/App_Code/PageComponents.cs` | PageComponents.cs needs to be updated during buildout with various document type aliases in order to auto generate the Page Components Folder child node type. | [View on Github](#) |
+| `~/App_Plugins/BetterLabel/`  (*Directory*)| This is a custom property type for more detailed labels within the Umbraco backoffice. | [View on Github](#) |
+| `~/Robots.txt` | | [View on Github](#) |

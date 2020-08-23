@@ -28,5 +28,4 @@ The {{ page.doctype }} Document Type has a template that handles the logic for g
     <dt>Templates</dt> <dd>XML Sitemap</dd>
 </dl>
 
-[How It Works](/Starterkit-Package/v8/XML-Sitemap.html#how-it-works) 
-{: .btn .btn-purple}
+[How It Works](/Starterkit-Package/v8/XML-Sitemap.html#how-it-works){: .btn .btn-purple}

@@ -28,5 +28,4 @@ The {{ page.doctype }} Document Type Document Type has a template that handles t
     <dt>Templates</dt> <dd>Search Page</dd>
 </dl>
 
-[How It Works](/Starterkit-Package/v8/Search.html#how-it-works) 
-{: .btn .btn-purple}
+[How It Works](/Starterkit-Package/v8/Search.html#how-it-works){: .btn .btn-purple}

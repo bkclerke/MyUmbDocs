@@ -50,18 +50,26 @@ For the open graph data, the meta data on the home page will need to be filled o
 - `businessPhone` sets the schema business phone number from the businessPhone property. If empty, the value will be blank.
 - `businessAddress` sets the schema business address from the businessAddress property. If empty, no address information will be shown.
 
+[View on Github](https://github.com/bkclerke/MyUmbDocs/blob/master/Starterkit-Package/v8/files/Views/Partials/_MetaData.cshtml){: .btn .btn-purple}
+
 ## Header
 
-
+[View on Github](https://github.com/bkclerke/MyUmbDocs/blob/master/Starterkit-Package/v8/files/Views/Partials/_Header.cshtml){: .btn .btn-purple}
 
 ## Footer
 
 The footer partial view is setup as a placeholder with a container row.
 
+[View on Github](https://github.com/bkclerke/MyUmbDocs/blob/master/Starterkit-Package/v8/files/Views/Partials/_Footer.cshtml){: .btn .btn-purple}
+
 ## Page Components
 
 The page components partial view is setup to handle rendering of the page components on a page. The functionality is explained in detail in the [page components documentation](/Components-Library.html).
 
+[View Page Components Documentation](/Components-Library.html){: .btn .btn-purple}
+
 ## Page Components Grid Layout
 
 The grid layout page component is included in the starterkit for general content pages. The functionality is explained in detail in the [grid layout page component documentation](/Components-Library/Page-Components.html).
+
+[View Page Components Documentation](/Components-Library.html){: .btn .btn-purple}

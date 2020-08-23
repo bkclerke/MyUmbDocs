@@ -102,6 +102,8 @@ The starterkit includes the following for getting started:
 
 - `~/scripts/matchheight.min.js`
   - A jquery plugin called <a href="https://brm.io/jquery-match-height/" target="_blank">Match Heights</a> is used frequently in builds.
+- `~/scripts/slick.min.js`
+  - A jquery plugin called <a href="http://kenwheeler.github.io/slick/" target="_blank">Slick</a> is used frequently in builds.
 
 ## DocumentTypes
 

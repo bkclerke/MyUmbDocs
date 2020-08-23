@@ -21,16 +21,17 @@ The {{ page.doctype }} Document Type is setup to be used for Content only. The s
     <dt>Document Type Name</dt> <dd>{{ page.doctype }}</dd>
     <dt>Document Type Alias</dt> <dd>globalSettings</dd>
     <dt>Document Type Icon</dt> <dd>icon-globe-alt</dd>
-    <dt>Design Tabs</dt> <dd>Navigation, Global Markup</dd>
+    <dt>Design Tabs</dt> <dd>Header, Global Markup</dd>
     <dt>List View</dt> <dd>No custom settings</dd>
     <dt>Permissions</dt> <dd>No custom settings</dd>
     <dt>Templates</dt> <dd>Parent Redirect</dd>
 </dl>
 
-**Navigation Tab Properties:**
+**Header Tab Properties:**
 
 | Title | Alias | Property Type |
 |-------|-------|---------------|
+| Logo Desktop | headerLogoLg | Image Picker **Mandatory* |
 | Main Navigation | mainNav | Navigation MNTP |
 | Show Dropdown | showDropdown | True/false |
 

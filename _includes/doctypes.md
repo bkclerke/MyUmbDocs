@@ -1,0 +1,19 @@
+- <i class="fa fa-folder" aria-hidden="true"></i> Pages
+  - [Home](doctypes/Doctype-Home-Schema.md)
+  - [Article Page](doctypes/Doctype-Article-Page-Schema.md)
+  - [Components Page](doctypes/Doctype-Comp-Page-Schema.md)
+  - [XML Sitemap](doctypes/Doctype-XML-Sitemap-Schema.md)
+  - [Search Page](doctypes/Doctype-Search-Page-Schema.md)
+- <i class="fa fa-folder" aria-hidden="true"></i> Organizational Items
+  - [Page Components Folder](doctypes/Doctype-Page-Comp-Folder-Schema.md)
+- <i class="fa fa-folder" aria-hidden="true"></i> Page Components
+  - [Grid Layout](doctypes/Doctype-Grid-Layout-Schema.md)
+- <i class="fa fa-folder" aria-hidden="true"></i> Compositions
+  - [Form Settings](doctypes/Doctype-Form-Settings-Schema.md)
+  - [Page Settings](doctypes/Doctype-Page-Settings-Schema.md)
+  - [SEO](doctypes/Doctype-SEO-Schema.md)
+  - [Component Settings](doctypes/Doctype-Comp-Settings-Schema.md)
+- <i class="fa fa-folder" aria-hidden="true"></i> Content Only
+  - [Global Settings](doctypes/Doctype-Global-Settings-Schema.md)
+  - [Nested Address](doctypes/Doctype-Nested-Address-Schema.md)
+  - [Alternate Link](doctypes/Doctype-Alternate-Link-Schema.md)

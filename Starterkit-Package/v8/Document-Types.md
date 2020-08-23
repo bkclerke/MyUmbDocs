@@ -11,20 +11,7 @@ grand_parent: Starterkit Package
 
 # Starterkit Document Types
 
-- [Home](doctypes/Doctype-Home-Schema.md)
-- [Article Page](doctypes/Doctype-Article-Page-Schema.md)
-- [Components Page](doctypes/Doctype-Comp-Page-Schema.md)
-- [Page Components Folder](doctypes/Doctype-Page-Comp-Folder-Schema.md)
-- Page Components [Organizational Folder]
-  - [Grid Layout](doctypes/Doctype-Grid-Layout-Schema.md)
-- Compositions [Organizational Folder]
-  - [Form Settings](doctypes/Doctype-Form-Settings-Schema.md)
-  - [Page Settings](doctypes/Doctype-Page-Settings-Schema.md)
-  - [SEO](doctypes/Doctype-SEO-Schema.md)
-  - [Component Settings](doctypes/Doctype-Comp-Settings-Schema.md)
-- Content Only [Organizational Folder]
-  - [Global Settings](doctypes/Doctype-Global-Settings-Schema.md)
-  - [Nested Address](doctypes/Doctype-Nested-Address-Schema.md)
+{% include doctypes.md %}
 
 ## Important Document Type Naming Conventions
 {: .no_toc }

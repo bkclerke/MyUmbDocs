@@ -32,8 +32,9 @@ The below templates are included in the DT Starterkit Package. The list below re
 - Master `~/Views/master.cshtml`
   - Components Page `~/Views/componentsPage.cshtml`
   - Article Page `~/Views/articlePage.cshtml`
+  - Search Page `~/Views/searchPage.cshtml`
 - Parent Redirect `~/Views/parentRedirect.cshtml`
-- XML Sitemap `~/Views/xMLSitemap.cshtml`
+- XML Sitemap `~/Views/xmlSitemap.cshtml`
 
 ## Partial Views
 
@@ -41,8 +42,9 @@ The below templates are included in the DT Starterkit Package. The list below re
 - `~/Views/Partials/_Header.cshtml`
 - `~/Views/Partials/_Footer.cshtml`
 - `~/Views/Partials/_PageComponents.cshtml`
-- `~/Views/Partials/_PC_Switch.cshtml`
 - `~/Views/Partials/PageComponents/_PC_GridLayout.cshtml`
+- `~Views/Partials/Search/_SearchForm.cshtml`
+- `~/Views/Partials/Search/_SearchResults.cshtml`
 
 [Partial View Files Explained](Partial-Views.md){: .btn .btn-purple}
 
@@ -86,20 +88,7 @@ The scripts folder contains various scripts related to the indiviual project. Th
 
 ## DocumentTypes
 
-- [Home](doctypes/Doctype-Home-Schema.md)
-- [Article Page](doctypes/Doctype-Article-Page-Schema.md)
-- [Components Page](doctypes/Doctype-Comp-Page-Schema.md)
-- [Page Components Folder](doctypes/Doctype-Page-Comp-Folder-Schema.md)
-- Page Components [Organizational Folder]
-  - [Grid Layout](doctypes/Doctype-Grid-Layout-Schema.md)
-- Compositions [Organizational Folder]
-  - [Form Settings](doctypes/Doctype-Form-Settings-Schema.md)
-  - [Page Settings](doctypes/Doctype-Page-Settings-Schema.md)
-  - [SEO](doctypes/Doctype-SEO-Schema.md)
-  - [Component Settings](doctypes/Doctype-Comp-Settings-Schema.md)
-- Content Only [Organizational Folder]
-  - [Global Settings](doctypes/Doctype-Global-Settings-Schema.md)
-  - [Nested Address](doctypes/Doctype-Nested-Address-Schema.md)
+{% include doctypes.md %}
 
 There are important practices to follow to keep your site organized and easy for editors to use when setting up your Umbraco website. **Please read the doctype setup instructions and important notes about doctype naming conventions.**
 

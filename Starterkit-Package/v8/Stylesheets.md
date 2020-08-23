@@ -55,4 +55,4 @@ The `main.scss` file is where all the partial stylesheets are combined to create
 
 ## Adding Custom Stylesheets
 
-When adding new styles to your site, create a `/theme/` folder in the `~/scripts/scss/` folder to put your new styles in. You can organize the new stylesheets in folders for `/plugins/` and page components `/pc/` to make the files easier to find. You can then import the files into the `main.scss` to include them into your `main.css` compiled file.
+When adding new styles to your site, create a `/theme/` folder in the `~/scripts/scss/` folder to put your new styles in. You can then import the files into the `main.scss` to include them into your `main.css` compiled file.

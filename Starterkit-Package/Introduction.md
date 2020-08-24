@@ -12,19 +12,31 @@ has_children: true
 packageVersion: 2
 ---
 
-# DT Starterkit Package 
+# DT Starterkit Package
+{: .no_toc }
 
-*Version {{ page.packageVersion }} Compatible with Umbraco {{ page.versionFrom }}+*
+## Table of Contents
+{: .no_toc .text-delta }
 
-This package setup begins after the [Site Setup Checklist](site-setup/Site-Setup-Checklist.html#site-setup-checklist) has been completed.
+1. TOC
+{:toc}
 
-## Package Includes
+## Requirements
 
-A full list of the Umbraco v{{ page.versionFrom }} Starterkit Package contents can be found on the [package includes](Starterkit-Package/v8/Package-Includes.html) page.
+**Package Version:** {{ page.packageVersion }} <br />
+**Umbraco Version:** {{ page.versionFrom }}
 
-## v{{ page.versionFrom }} Setup Instructions
 
-1. Install the DT Starterkit package via the Install Local option the Umbraco Packages section.
+
+## Setup
+
+### Step 1 - Complete Site Setup Checklist
+
+First, run through the [Site Setup Checklist](site-setup/Site-Setup-Checklist.html#site-setup-checklist). Once this has been completed it is time to Install the Starterkit Package.
+
+### Step 2 - Install Starterkit Package
+
+1. Install the Starterkit Package via the Install Local option the Umbraco Packages section.
    - ![Install Local Package](v8/images/umbraco-packages-install-screen.png)
 2. Configure the following Data Types
    - Richtext editor
@@ -39,3 +51,9 @@ A full list of the Umbraco v{{ page.versionFrom }} Starterkit Package contents c
    - ![Set template master template](v8/images/page-set-master-temp.png)
 
 The rest of the starterkit setup starts with customzing your page components based off your design evaluation. 
+
+## Package Includes
+
+The Starterkit Package includes various, document types, templates, partial views, search and sitemap functionality to get websites up and running quicker.
+
+[View Package Includes](/Starterkit-Package/v8/Package-Includes.html){: .btn .btn-purple}

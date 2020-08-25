@@ -12,12 +12,12 @@ This project contains documentation on my Umbraco process for buildouts.
 
 The process documentation found here goes in a particular order.
 
-1. [Site Setup Checklist](Site-Setup/Introduction.md)
-2. [Starterkit Package](Starterkit-Package/Introduction.md)
+1. [Site Setup Checklist](/Site-Setup/Site-Setup-Checklist.html)
+2. [Starterkit Package](/Starterkit-Package.html)
    - This installs the files for the Form Handler and the base data types and files needed for the Component Library
-3. [Form Handler Package](Form-Handler/Introduction.md)
+3. [Form Handler Package](/Form-Handler.html)
    - Handles form submissions for the entire site
-4. [Component Library](Component-Library/Introduction.md)
+4. [Components Library](/Components-Library.html)
 
 ## The Method
 

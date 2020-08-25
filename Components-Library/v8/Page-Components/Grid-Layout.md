@@ -21,7 +21,7 @@ doctype: Grid Layout
 1. TOC
 {:toc}
 
-## Introduction to the {{ page.doctype }} Page Component
+## Introduction
 
 The {{ page.doctype }} Page Component allows an editor to easily setup a grid content area for their website. The content allowed within the grid layout is completely customizable and configured by a developer during the buildout.
 

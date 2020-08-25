@@ -12,7 +12,7 @@ has_children: true
 packageVersion: 2
 ---
 
-# DT Starterkit Package
+# Starterkit Package
 {: .no_toc }
 
 ## Table of Contents
@@ -37,7 +37,7 @@ First, run through the [Site Setup Checklist](site-setup/Site-Setup-Checklist.ht
 ### Step 2 - Install Starterkit Package
 
 1. Install the Starterkit Package via the Install Local option the Umbraco Packages section.
-   - ![Install Local Package](v8/images/umbraco-packages-install-screen.png)
+   - ![Install Local Package](/Starterkit-Package/v8/images/umbraco-packages-install-screen.png)
 2. Configure the following Data Types
    - Richtext editor
      - Adjust toolbar options as needed
@@ -48,7 +48,7 @@ First, run through the [Site Setup Checklist](site-setup/Site-Setup-Checklist.ht
      - Assign user stylesheet
      - Turn off image resizing by setting 'Maximium size for inserted images' to 0 Pixels.
 3. Adjust template inheritance in settings section - This is because the files come into umbraco with the proper code but the tree structure doesnt appear to register that some templates are using the Master template for the master. 
-   - ![Set template master template](v8/images/page-set-master-temp.png)
+   - ![Set template master template](/Starterkit-Package/v8/images/page-set-master-temp.png)
 
 The rest of the starterkit setup starts with customzing your page components based off your design evaluation. 
 

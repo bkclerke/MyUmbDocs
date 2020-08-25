@@ -18,12 +18,7 @@ grand_parent: Starterkit Package
 1. TOC
 {:toc}
 
-
-## Starterkit Document Types
-
-{% include starterkit-doctypes.md %}
-
-## Important Document Type Naming Conventions
+## Document Type Naming Conventions
 
 Default naming conventions for document types is the doctype name in camel case format. For example, `componentsPage`, `articlePage` and `home`.
 
@@ -38,3 +33,7 @@ Page component document type aliases must be prefixed with the lowercase letters
 This practice makes it easy to recognize when selecting doctypes within Umbraco and helps users denote the difference in nodes when they see the document type icons and colors.
 
 [Learn More About Page Components](/Components-Library.html){: .btn .btn-purple}
+
+## Starterkit Document Types
+
+{% include starterkit-doctypes.md %}

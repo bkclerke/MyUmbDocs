@@ -35,6 +35,8 @@ For example if you were to create a new page component called "Banner Section" y
 
 Partial view files for page components are in the Umbraco Settings Section in the Partial Views > Page Components folder. You can find these files in the ~/Views/Partials/PageComponents/ folder in Umbraco file system. To create a new partial view, right click the PageComponents folder in Umbraco, click Create and select "New empty partial view". The proper naming convention for page component partial views appends "_PC_" before the title of the page component. Using the banner section example, the partial view used to render it would be named "_PC_BannerSection.cshtml". 
 
+Learn More About [Document Type Naming Conventions](/Starterkit-Package/v8/Document-Types.html#document-type-naming-conventions){: .btn .btn-purple}
+
 ## Page Component Configuration
 
 To improve editor experience, make page components stand out in the content tree by using a different color icon. For example, our default page component setup uses the color orange for page components and a different color for all other page types.
@@ -53,7 +55,7 @@ Page Components utilize the Parent Redirect template included in the Starterkit.
 
 ## Page Component Code File Conventions
 
-You will notice that the current library of page components sticks to a similar setup for the code file. This setup requires that your new page component utilizes the [component settings](../../Starterkit-Package/v8/doctypes/Doctype-Comp-Settings-Schema.html) document type schema as a composition. These are the properties we are writing code for initially in our file. If you do not utilize this and your page component is completely custom, disregard the code listed specifically but keep in mind that this convention may be helpful for your developers to setup styles for this page component.
+You will notice that the current library of page components sticks to a similar setup for the code file. This setup requires that your new page component utilizes the [component settings](/Starterkit-Package/v8/doctypes/Doctype-Comp-Settings-Schema.html) document type schema as a composition. These are the properties we are writing code for initially in our file. If you do not utilize this and your page component is completely custom, disregard the code listed specifically but keep in mind that this convention may be helpful for your developers to setup styles for this page component.
 
 ### Step 1: Component ID
 
@@ -71,7 +73,7 @@ The `componentName` is the base component name css class utilized in the css to 
 
 ### Step 2: Component Background Settings
 
-The next area sets up the component background settings and color theme. These are the base settings setup in the [DocType Composition Component Settings](../../Starterkit-Package/v8/doctypes/Doctype-Comp-Settings-Schema.html). 
+The next area sets up the component background settings and color theme. These are the base settings setup in the [DocType Composition Component Settings](/Starterkit-Package/v8/doctypes/Doctype-Comp-Settings-Schema.html). 
 
 Typically the page components allow for a custom background image, thus setting up the css for the `background-image`, `background-size`, `background-position`, and `background-repeat` values.
 
@@ -211,7 +213,7 @@ It is time to setup your markup for your custom page component. Inside of the ma
 </div>
 ```
 
-***Tip:** The [grid layout](../../Starterkit-Package/v8/doctypes/Doctype-Grid-Layout-Schema.html) utilzes the most basic setup with the [component settings](../../Starterkit-Package/v8/doctypes/Doctype-Comp-Settings-Schema.html) composition. To save time setting up new page component files, we use the gird layout code file to start our new page component files. In the new files, we remove the `GetGridHtml` method since this is specific to the grid layout component, but we leave the outter div. The outter div is what we need to wrap our new page component in.*
+***Tip:** The [grid layout](/Components-Library/v8/Page-Components/Grid-Layout.html) utilzes the most basic setup with the [component settings](/Starterkit-Package/v8/doctypes/Doctype-Comp-Settings-Schema.html) composition. To save time setting up new page component files, we use the gird layout code file to start our new page component files. In the new files, we remove the `GetGridHtml` method since this is specific to the grid layout component, but we leave the outter div. The outter div is what we need to wrap our new page component in.*
 
 When rendered on the website you would see a div with a unique ID and multiple classes including the base component name class (for general styling purposes), the theme (light or dark) and the top and bottom spacing.
 

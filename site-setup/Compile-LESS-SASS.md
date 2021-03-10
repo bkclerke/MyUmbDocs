@@ -9,7 +9,8 @@ nav_order: 2
 ## Visual Studio Code (MAC)
 
 - For LESS - Use the [Easy Less](https://marketplace.visualstudio.com/items?itemName=mrcrowl.easy-less) plugin for compiling LESS.
-- For SASS - Use the [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass) for compiling SASS.
+- For SASS - Use the [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass) for compiling SASS.
+  - Make sure that you choose the plugin maintained by Glen Marks as it is more updated. The other one by Ritwick Dey is no longer maintained. 
   - Use the [settings.json](https://github.com/bkclerke/myumbdocs/blob/master/site-setup/files/Compiler-Settings/settings.json) file in your root project folder. 
     - For example, if you open a site folder in VS Code, that will be your root folder and the location of the settings.json file (ie: /scripts/scss/settings.json).
 
